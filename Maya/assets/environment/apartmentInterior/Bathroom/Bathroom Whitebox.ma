@@ -1,15 +1,26 @@
 //Maya ASCII 2026 scene
 //Name: Bathroom Whitebox.ma
-//Last modified: Thu, Sep 25, 2025 11:03:14 AM
+//Last modified: Tue, Sep 30, 2025 01:58:34 AM
 //Codeset: UTF-8
-file -rdi 1 -ns "toilet" -rfn "toiletRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/toilet.ma";
-file -rdi 1 -ns "Mirror1" -rfn "MirrorRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/Mirror.ma";
-file -rdi 1 -ns "ToiletBrush" -rfn "ToiletBrushRN" -op "v=0;" -typ "mayaAscii"
+file -rdi 1 -ns "toilet" -dr 1 -rfn "toiletRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/toilet.ma";
+file -rdi 1 -ns "Mirror1" -dr 1 -rfn "MirrorRN" -op "v=0;" -typ "mayaAscii"
+		 "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/Mirror.ma";
+file -rdi 1 -ns "ToiletBrush" -dr 1 -rfn "ToiletBrushRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/ToiletBrush.ma";
+file -rdi 1 -ns "toilet1" -rfn "toiletRN1" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toilet/toilet.ma";
+file -rdi 1 -ns "ToiletBrush1" -rfn "ToiletBrushRN1" -op "v=0;" -typ "mayaAscii"
+		 "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletbrush/ToiletBrush.ma";
+file -rdi 1 -ns "Mirror2" -rfn "MirrorRN1" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/mirror/Mirror.ma";
+file -rdi 1 -ns "comb" -rfn "combRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/HandheldProps/comb/comb.ma";
 file -r -ns "toilet" -dr 1 -rfn "toiletRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/toilet.ma";
 file -r -ns "Mirror1" -dr 1 -rfn "MirrorRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/Mirror.ma";
 file -r -ns "ToiletBrush" -dr 1 -rfn "ToiletBrushRN" -op "v=0;" -typ "mayaAscii"
 		 "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/ToiletBrush.ma";
+file -r -ns "toilet1" -dr 1 -rfn "toiletRN1" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toilet/toilet.ma";
+file -r -ns "ToiletBrush1" -dr 1 -rfn "ToiletBrushRN1" -op "v=0;" -typ "mayaAscii"
+		 "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletbrush/ToiletBrush.ma";
+file -r -ns "Mirror2" -dr 1 -rfn "MirrorRN1" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/mirror/Mirror.ma";
+file -r -ns "comb" -dr 1 -rfn "combRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/HandheldProps/comb/comb.ma";
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.5.3";
@@ -21,21 +32,21 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Mac OS X 15.6.1";
-fileInfo "UUID" "3C42C03D-1F42-A0DE-500A-4E996FE131B1";
+fileInfo "UUID" "28DA2DA5-5E40-1758-CE51-EBA667EA94E3";
 createNode transform -s -n "persp";
 	rename -uid "94FC1A6E-BE45-2DB5-B14D-D599577A93E6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 24.057800532377815 7.8374351568895975 2.5001523040512259 ;
-	setAttr ".r" -type "double3" -6.3383527295262585 -282.20000000008588 -1.8813189074293648e-15 ;
+	setAttr ".t" -type "double3" -4.1916305184570364 12.413799846731987 3.2759854068087391 ;
+	setAttr ".r" -type "double3" -47.138352730525675 -672.59999999991282 9.397747368575997e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "838555BA-A746-ABA9-6874-54B01A8B985B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 35.817199287546224;
+	setAttr ".coi" 10.840718342030401;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -9.6993601467404602 1.1559165273108079 -9.8259693208173591 ;
+	setAttr ".tp" -type "double3" -9.6197472088202716 4.4675706846524665 -1.715423760025089 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "28C1F8B7-9A49-537A-DB31-DC83247DD067";
@@ -982,20 +993,20 @@ createNode mesh -n "polySurfaceShape3" -p "polySurface2";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "49544D14-E94E-9ECC-A03E-1A90714CD080";
-	setAttr -s 5 ".lnk";
-	setAttr -s 5 ".slnk";
+	rename -uid "E10647C3-C643-97B0-2D12-349B1698B613";
+	setAttr -s 15 ".lnk";
+	setAttr -s 15 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "BEC5D765-8F45-BFDA-7650-4DA3AC651468";
+	rename -uid "5C95519F-1747-BED0-A63D-94A10F1A33BA";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "887FC8A5-2F4D-17EE-FBE6-3C9512F90616";
+	rename -uid "39C7308A-6747-C25E-16AE-19A5F1EBCF58";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "AF9ED2D3-3B40-9E12-4664-828CE70B4743";
+	rename -uid "2840152A-014C-AB61-2ECA-DE8B1FF6FBD1";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1F35D023-BF48-6391-760A-D080EB7398C2";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "126A9625-DD40-7DD3-DAE2-C49B4FCA0FA1";
+	rename -uid "14E8A05D-B84A-7B72-D527-EA9BEEBE6443";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "6DE3029A-3648-9468-DCC5-36824CB162DF";
 	setAttr ".g" yes;
@@ -1024,7 +1035,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
 		+ "            -camera \"|persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1754\n            -height 1706\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 2510\n            -height 1706\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n"
 		+ "            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n"
 		+ "            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n"
@@ -1048,8 +1059,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n"
 		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n"
 		+ "\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1754\\n    -height 1706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1754\\n    -height 1706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2510\\n    -height 1706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2510\\n    -height 1706\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -1109,7 +1120,6 @@ createNode reference -n "toiletRN";
 	rename -uid "4887B227-B849-9898-7234-FB9A04D358DF";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"toiletRN"
-		"toiletRN" 0
 		"toiletRN" 2
 		2 "|toilet:Toilet" "translate" " -type \"double3\" -10.45173161697561071 0 -7.06252411312091244"
 		
@@ -1135,7 +1145,6 @@ createNode reference -n "MirrorRN";
 	rename -uid "4892A9EC-D64F-DF11-337E-E9BAD9343922";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"MirrorRN"
-		"MirrorRN" 0
 		"MirrorRN" 4
 		2 "|Mirror1:mirror_model" "translate" " -type \"double3\" -12.06739364824426453 -9.26342783417499938 -0.49496682891522026"
 		
@@ -1150,7 +1159,6 @@ createNode reference -n "ToiletBrushRN";
 	rename -uid "25DE0346-3841-1013-71C9-C296682351A9";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"ToiletBrushRN"
-		"ToiletBrushRN" 0
 		"ToiletBrushRN" 110
 		2 "|ToiletBrush:Toilet_Brush|ToiletBrush:Brush_holder" "translate" " -type \"double3\" -9.69290025494434815 0.48942111472268812 -9.84046528963602363"
 		
@@ -1374,6 +1382,277 @@ createNode reference -n "ToiletBrushRN";
 		"translate" " -type \"double3\" -9.69290025494434815 0 -9.84046528963602363";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode timeEditor -s -n "timeEditor";
+	rename -uid "7D70D246-3843-733B-4340-2C856DA16FD7";
+createNode reference -n "toiletRN1";
+	rename -uid "885595BC-724E-D5F7-DD7D-1EA3290FA1D5";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"toiletRN1"
+		"toiletRN1" 0
+		"toiletRN1" 2
+		2 "|toilet1:Toilet" "translate" " -type \"double3\" -10.47507196225974013 0 -7.23725259201851578"
+		
+		2 "|toilet1:Toilet" "rotate" " -type \"double3\" -89.99999999999997158 89.99999066533266046 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "sharedReferenceNode";
+	rename -uid "B3E31DBC-6E43-AB72-7F48-69AEA0D6D06E";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sharedReferenceNode";
+createNode reference -n "ToiletBrushRN1";
+	rename -uid "F53B60C6-2342-7812-240C-23BBA2A81D6B";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"ToiletBrushRN1"
+		"ToiletBrushRN1" 0
+		"ToiletBrushRN1" 110
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Brush_holder" "translate" " -type \"double3\" -10.09737804064081601 0.48942111472268812 -10.11690734348242948"
+		
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Brush_Handle" "translate" " -type \"double3\" -10.09737804064081601 0.48942111472268812 -10.11690734348242948"
+		
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group18|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group18|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group18|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group18|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group18|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group18|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group17|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group17|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group17|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group17|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group17|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group17|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group16|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group16|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group16|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group16|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group16|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group16|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group15|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group15|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group15|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group15|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group15|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group15|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group14|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group14|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group14|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group14|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group14|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group14|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group13|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group13|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group13|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group13|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group13|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group13|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group12|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group12|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group12|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group12|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group12|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group12|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group11|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group11|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group11|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group11|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group11|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group11|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group10|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group10|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group10|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group10|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group10|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group10|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group9|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group9|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group9|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group9|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group9|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group9|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group8|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group8|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group8|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group8|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group8|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group8|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group7|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group7|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group7|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group7|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group7|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group7|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group6|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group6|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group6|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group6|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group6|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group6|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group5|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group5|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group5|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group5|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group5|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group5|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group4|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group4|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group4|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group4|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group4|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group4|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group3|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group3|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group3|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group3|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group3|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group3|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group2|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group2|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group2|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group2|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group2|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group2|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group1|ToiletBrush1:polySurface18" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group1|ToiletBrush1:polySurface19" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group1|ToiletBrush1:polySurface17" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group1|ToiletBrush1:polySurface15" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group1|ToiletBrush1:polySurface14" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948"
+		2 "|ToiletBrush1:Toilet_Brush|ToiletBrush1:Bristles_new|ToiletBrush1:group1|ToiletBrush1:polySurface16" 
+		"translate" " -type \"double3\" -10.09737804064081601 0 -10.11690734348242948";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "MirrorRN1";
+	rename -uid "5F52F83F-A34E-58B5-7FF0-92994098AF62";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"MirrorRN1"
+		"MirrorRN1" 0
+		"MirrorRN1" 4
+		2 "|Mirror2:mirror_model" "translate" " -type \"double3\" -12.11387467244585814 -9.34000505950317006 -0.39475608970340392"
+		
+		2 "|Mirror2:mirror_model" "rotate" " -type \"double3\" 0 -89.99999999999997158 0"
+		
+		2 "|Mirror2:mirror_model" "scale" " -type \"double3\" 0.12399310635709457 0.12399310635709457 0.12399310635709457"
+		
+		2 "|Mirror2:mirror_model" "rotatePivotTranslate" " -type \"double3\" 0 0 0";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "combRN";
+	rename -uid "4B780C25-2647-9B91-835A-C3A6E539D429";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"combRN"
+		"combRN" 0
+		"combRN" 2
+		2 "|comb:svgMesh1" "translate" " -type \"double3\" -10.50281421143029092 4.01664543860996659 -2.11671880024728765"
+		
+		2 "|comb:svgMesh1" "scale" " -type \"double3\" 0.11502065611038553 0.11502065611038553 0.11502065611038553";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -cb on ".ihi";
@@ -1410,7 +1689,7 @@ select -ne :renderPartition;
 	setAttr -cb on ".ihi";
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 5 ".st";
+	setAttr -s 8 ".st";
 	setAttr -cb on ".an";
 	setAttr -cb on ".pt";
 select -ne :renderGlobalsList1;
@@ -1423,7 +1702,7 @@ select -ne :defaultShaderList1;
 	setAttr -cb on ".ihi";
 	setAttr -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -s 9 ".s";
+	setAttr -s 10 ".s";
 select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -cb on ".ihi";
@@ -1672,6 +1951,9 @@ connectAttr "pCubeShape1.wm" "polyBoolean1.im[0]";
 connectAttr "FloorShape.wm" "polyBoolean1.im[1]";
 connectAttr "polyExtrudeFace2.out" "groupParts1.ig";
 connectAttr "groupId10.id" "groupParts1.gi";
+connectAttr "sharedReferenceNode.sr" "toiletRN.sr";
+connectAttr "sharedReferenceNode.sr" "MirrorRN.sr";
+connectAttr "sharedReferenceNode.sr" "ToiletBrushRN.sr";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "WallShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "WallShape2.iog" ":initialShadingGroup.dsm" -na;
