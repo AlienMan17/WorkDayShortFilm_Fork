@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Bathroom Whitebox.ma
-//Last modified: Tue, Sep 30, 2025 01:58:34 AM
+//Last modified: Thu, Oct 02, 2025 10:45:58 AM
 //Codeset: UTF-8
 file -rdi 1 -ns "toilet" -dr 1 -rfn "toiletRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/toilet.ma";
 file -rdi 1 -ns "Mirror1" -dr 1 -rfn "MirrorRN" -op "v=0;" -typ "mayaAscii"
@@ -12,6 +12,8 @@ file -rdi 1 -ns "ToiletBrush1" -rfn "ToiletBrushRN1" -op "v=0;" -typ "mayaAscii"
 		 "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletbrush/ToiletBrush.ma";
 file -rdi 1 -ns "Mirror2" -rfn "MirrorRN1" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/mirror/Mirror.ma";
 file -rdi 1 -ns "comb" -rfn "combRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/HandheldProps/comb/comb.ma";
+file -rdi 1 -ns "LightBathroom" -rfn "LightBathroomRN" -op "v=0;" -typ "mayaAscii"
+		 "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/lightbathroom/LightBathroom.ma";
 file -r -ns "toilet" -dr 1 -rfn "toiletRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/toilet.ma";
 file -r -ns "Mirror1" -dr 1 -rfn "MirrorRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/3DAnimation-games/MayaProjects/Scenes/Mirror.ma";
 file -r -ns "ToiletBrush" -dr 1 -rfn "ToiletBrushRN" -op "v=0;" -typ "mayaAscii"
@@ -21,6 +23,8 @@ file -r -ns "ToiletBrush1" -dr 1 -rfn "ToiletBrushRN1" -op "v=0;" -typ "mayaAsci
 		 "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/toiletbrush/ToiletBrush.ma";
 file -r -ns "Mirror2" -dr 1 -rfn "MirrorRN1" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/mirror/Mirror.ma";
 file -r -ns "comb" -dr 1 -rfn "combRN" -op "v=0;" -typ "mayaAscii" "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/HandheldProps/comb/comb.ma";
+file -r -ns "LightBathroom" -dr 1 -rfn "LightBathroomRN" -op "v=0;" -typ "mayaAscii"
+		 "/Users/natalieortman/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/ApartmentProps/lightbathroom/LightBathroom.ma";
 requires maya "2026";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
 		 "mtoa" "5.5.3";
@@ -32,21 +36,21 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Mac OS X 15.6.1";
-fileInfo "UUID" "28DA2DA5-5E40-1758-CE51-EBA667EA94E3";
+fileInfo "UUID" "45BCC28B-5041-6C3C-4EA1-4B943A0CE9CE";
 createNode transform -s -n "persp";
 	rename -uid "94FC1A6E-BE45-2DB5-B14D-D599577A93E6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.1916305184570364 12.413799846731987 3.2759854068087391 ;
-	setAttr ".r" -type "double3" -47.138352730525675 -672.59999999991282 9.397747368575997e-15 ;
+	setAttr ".t" -type "double3" 17.980158390961147 7.836046392363464 0.76069624216745491 ;
+	setAttr ".r" -type "double3" -1.5383527301595854 -635.79999999969118 9.8353429298004202e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "838555BA-A746-ABA9-6874-54B01A8B985B";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 10.840718342030401;
+	setAttr ".coi" 17.866982914027837;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -9.6197472088202716 4.4675706846524665 -1.715423760025089 ;
+	setAttr ".tp" -type "double3" 0.087742805480957031 7.9949458539485931 0 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "28C1F8B7-9A49-537A-DB31-DC83247DD067";
@@ -722,6 +726,7 @@ createNode mesh -n "TowelShape" -p "Towel";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Light";
 	rename -uid "783944B6-BF4D-669E-A27A-D5B205E4A4EE";
+	setAttr ".v" no;
 	setAttr ".rp" -type "double3" -6.0922459384661485 13.006634638128789 0 ;
 	setAttr ".sp" -type "double3" -6.0922459384661485 13.006634638128789 0 ;
 createNode mesh -n "LightShape" -p "Light";
@@ -775,6 +780,7 @@ createNode mesh -n "LightShape" -p "Light";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "Cord";
 	rename -uid "EB118FD2-A642-1282-5AD7-82BB244BD983";
+	setAttr ".v" no;
 	setAttr ".rp" -type "double3" -6.0922459384661485 13.669425255462357 0 ;
 	setAttr ".sp" -type "double3" -6.0922459384661485 13.669425255462354 0 ;
 createNode mesh -n "CordShape" -p "Cord";
@@ -993,20 +999,20 @@ createNode mesh -n "polySurfaceShape3" -p "polySurface2";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "E10647C3-C643-97B0-2D12-349B1698B613";
-	setAttr -s 15 ".lnk";
-	setAttr -s 15 ".slnk";
+	rename -uid "CD41182F-D949-374A-E9CE-A68334C6EA86";
+	setAttr -s 8 ".lnk";
+	setAttr -s 8 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "5C95519F-1747-BED0-A63D-94A10F1A33BA";
+	rename -uid "BD9E41C5-654E-84FF-2A76-54841622E227";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "39C7308A-6747-C25E-16AE-19A5F1EBCF58";
+	rename -uid "DD990848-F846-AE48-866E-7EA4C700BE7E";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "2840152A-014C-AB61-2ECA-DE8B1FF6FBD1";
+	rename -uid "D4C35CAA-2746-2A05-B0E3-E984CDE78B50";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "1F35D023-BF48-6391-760A-D080EB7398C2";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "14E8A05D-B84A-7B72-D527-EA9BEEBE6443";
+	rename -uid "7D0DCC88-FB4F-48A6-F2AA-D09A2978A002";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "6DE3029A-3648-9468-DCC5-36824CB162DF";
 	setAttr ".g" yes;
@@ -1653,6 +1659,17 @@ createNode reference -n "combRN";
 		2 "|comb:svgMesh1" "scale" " -type \"double3\" 0.11502065611038553 0.11502065611038553 0.11502065611038553";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
+createNode reference -n "LightBathroomRN";
+	rename -uid "A527B5D5-DC4A-4E4D-61D1-8B9E78C8796D";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"LightBathroomRN"
+		"LightBathroomRN" 0
+		"LightBathroomRN" 2
+		2 "|LightBathroom:polySurface44" "translate" " -type \"double3\" 127.49351204510757896 -291.50335586634736273 -1.59551410941585381"
+		
+		2 "|LightBathroom:polySurface44" "scale" " -type \"double3\" 0.04677546660898222 0.04677546660898222 0.04677546660898222";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
 select -ne :time1;
 	setAttr -av -k on ".cch";
 	setAttr -av -cb on ".ihi";
@@ -1710,6 +1727,8 @@ select -ne :postProcessList1;
 	setAttr -cb on ".bnm";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
+	setAttr -k on ".cch";
+	setAttr -k on ".nds";
 select -ne :defaultRenderingList1;
 	setAttr -k on ".ihi";
 	setAttr -s 4 ".r";
@@ -1730,7 +1749,7 @@ select -ne :initialShadingGroup;
 	setAttr -k on ".vwm";
 	setAttr -k on ".tpv";
 	setAttr -k on ".uit";
-	setAttr -s 22 ".dsm";
+	setAttr -s 56 ".dsm";
 	setAttr -k on ".mwc";
 	setAttr -cb on ".an";
 	setAttr -cb on ".il";
@@ -1739,7 +1758,7 @@ select -ne :initialShadingGroup;
 	setAttr -cb on ".fo";
 	setAttr -cb on ".epo";
 	setAttr -k on ".ro" yes;
-	setAttr -s 8 ".gn";
+	setAttr -s 40 ".gn";
 select -ne :initialParticleSE;
 	setAttr -av -k on ".cch";
 	setAttr -cb on ".ihi";
