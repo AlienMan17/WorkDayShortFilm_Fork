@@ -1,21 +1,17 @@
 //Maya ASCII 2024 scene
 //Name: Shots_32To34.ma
-//Last modified: Mon, Nov 10, 2025 08:22:45 PM
+//Last modified: Sat, Nov 29, 2025 06:35:57 PM
 //Codeset: 1252
 file -rdi 1 -ns "DragonGateCaveSet" -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
 		 "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/environment/caveInterior/DragonGateCaveSet.ma";
 file -rdi 2 -ns "DragonGate" -rfn "DragonGateCaveSet:DragonGateRN" -op "v=0;"
 		 -typ "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/dragonGate/DragonGate.ma";
-file -rdi 2 -ns "Dragon_Rig" -rfn "DragonGateCaveSet:Dragon_RigRN" -op "v=0;"
-		 -typ "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/characters/dragon/Dragon_Rig.ma";
 file -rdi 2 -ns "Stalagmite_1" -rfn "DragonGateCaveSet:Stalagmite_1RN" -op "v=0;"
 		 -typ "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/Stalagemites/Stalagmite_1.ma";
 file -rdi 2 -ns "Stalagmite_2" -rfn "DragonGateCaveSet:Stalagmite_2RN" -op "v=0;"
 		 -typ "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/Stalagemites/Stalagmite_2.ma";
 file -rdi 2 -ns "Emergency_Button" -rfn "DragonGateCaveSet:Emergency_ButtonRN"
 		 -op "v=0;" -typ "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/emergencyButton/Emergency Button.ma";
-file -rdi 2 -ns "Skeleton" -rfn "DragonGateCaveSet:SkeletonRN" -op "v=0;" -typ
-		 "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -rdi 2 -ns "DragonGateTorch" -rfn "DragonGateCaveSet:DragonGateTorchRN"
 		 -op "v=0;" -typ "mayaAscii" "D:/GitRepos/WorkDayShortFilmOfficialRepo/Maya//assets/props/DungeonProps/dragonGate/DragonGateTorch.ma";
 file -rdi 2 -ns "Large_Boulder" -rfn "DragonGateCaveSet:Large_BoulderRN" -op
@@ -34,6 +30,7 @@ file -rdi 1 -ns "TorchesChests" -dr 1 -rfn "TorchesChestsRN" -op "v=0;" -typ
 		 "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/dungeonProps/treasureChest/TorchesChests.ma";
 file -rdi 1 -ns "Mimic" -rfn "MimicRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/mimic/Mimic.ma";
 file -rdi 1 -ns "Mimic_Rig" -rfn "Mimic_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/mimic/Mimic_Rig.ma";
+file -rdi 1 -ns "Skeleton" -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 file -r -ns "DragonGateCaveSet" -dr 1 -rfn "DragonGateCaveSetRN" -op "v=0;" -typ
 		 "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/environment/caveInterior/DragonGateCaveSet.ma";
 file -r -ns "ChestProp" -dr 1 -rfn "ChestPropRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/dungeonProps/treasureChest/ChestProp.ma";
@@ -44,6 +41,7 @@ file -r -ns "TorchesChests" -dr 1 -rfn "TorchesChestsRN" -op "v=0;" -typ "mayaAs
 		 "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/props/dungeonProps/treasureChest/TorchesChests.ma";
 file -r -ns "Mimic" -dr 1 -rfn "MimicRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/mimic/Mimic.ma";
 file -r -ns "Mimic_Rig" -dr 1 -rfn "Mimic_RigRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/mimic/Mimic_Rig.ma";
+file -r -ns "Skeleton" -dr 1 -rfn "SkeletonRN" -op "v=0;" -typ "mayaAscii" "D:/GithubStuff/University/WorkDayShortFilmOfficialRepo/Maya//assets/characters/skeleton/Skeleton.ma";
 requires maya "2024";
 requires -nodeType "ikSpringSolver" "ikSpringSolver" "1.0";
 requires "stereoCamera" "10.0";
@@ -57,12 +55,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "93C369F3-4710-8391-8B81-AF9A4CD8C220";
+fileInfo "UUID" "88EF8A1B-4B94-0FF3-02B3-9284455D86B9";
 createNode transform -s -n "persp";
 	rename -uid "B6E5B484-4A6F-2211-811F-4C9E56FE5644";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 7.2620954488134384 4.0636557242260301 16.453516289254136 ;
-	setAttr ".r" -type "double3" -38.138352727661413 -2644.2000000005619 0 ;
+	setAttr ".t" -type "double3" 5.4994664280924779 0.50342789031316559 11.760564621428612 ;
+	setAttr ".r" -type "double3" -0.93835272801394431 -2705.8000000004845 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5DFD724B-49AC-5700-A055-27BF905A3144";
 	setAttr -k off ".v" no;
@@ -70,12 +68,12 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 1000;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 3.4316316064923336;
+	setAttr ".coi" 4.7877911993056852;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 949.44298482819238 194.44087422172254 1797.0609180567335 ;
+	setAttr ".tp" -type "double3" 594.48731126844802 -3.944304526105059e-31 1634.8419540141758 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".dfg" yes;
 createNode transform -s -n "top";
@@ -145,7 +143,8 @@ createNode transform -n "Environment";
 createNode lookAt -n "camera1_group";
 	rename -uid "D1F30EB6-463A-6BE2-5195-B4ADB637CF29";
 	setAttr ".a" -type "double3" 0 0 -1 ;
-	setAttr ".db" 612.43731273031881;
+	setAttr ".db" 618.76151258392633;
+	setAttr ".tws" 1.4787793334710982e-06;
 createNode transform -n "camera1" -p "camera1_group";
 	rename -uid "ECC80731-477A-50CB-E319-FEA8558BE204";
 	setAttr ".rp" -type "double3" -1.1368683772161603e-15 -1.1368683772161603e-15 1.1368683772161603e-15 ;
@@ -157,12 +156,12 @@ createNode camera -n "cameraShape1" -p "camera1";
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
-	setAttr ".coi" 612.43731273031881;
+	setAttr ".coi" 618.76151258392633;
 	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
-	setAttr ".tp" -type "double3" 1020.231344188961 136.30762562151432 1786.7835421294051 ;
+	setAttr ".tp" -type "double3" 594.48731126844802 -3.944304526105059e-31 1634.8419540141758 ;
 	setAttr ".dr" yes;
 createNode transform -n "camera1_aim" -p "camera1_group";
 	rename -uid "43A26904-4D29-A07F-330D-DE97B90AA25A";
@@ -195,23 +194,23 @@ createNode parentConstraint -n "Mid_Space_Ctrl_01_parentConstraint1" -p "DragonG
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" -0.39770248594701796 0.6537328080875926 0.014911452346034366 ;
 	setAttr ".tg[0].tor" -type "double3" 22.982743583785727 95.190925870618841 6.869998111961196e-13 ;
-	setAttr ".lr" -type "double3" 6.4406232299636228e-13 -2.4251729446159014e-14 -5.4069429584879921e-14 ;
+	setAttr ".lr" -type "double3" 22.982743583785727 270 0 ;
 	setAttr ".rst" -type "double3" -2.2737367544323206e-15 7.105427357601002e-17 5.6843418860808016e-16 ;
 	setAttr ".rsrr" -type "double3" 6.4883315501855756e-13 -3.9756933518330888e-16 6.5201370970002095e-14 ;
 	setAttr -k on ".w0";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "CED7239E-418D-86E3-A267-6D88F1CF0E1C";
-	setAttr -s 220 ".lnk";
-	setAttr -s 220 ".slnk";
+	rename -uid "E6DA33CC-4818-BEE8-C3C4-6494A5BA0450";
+	setAttr -s 144 ".lnk";
+	setAttr -s 144 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "6EBCD50F-483E-6185-F0A3-DDA7709A519A";
+	rename -uid "864BEC80-4372-2737-9ABA-DAB824922669";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 2 0 1 ;
 	setAttr -s 2 ".bspr";
 	setAttr -s 2 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "D1A87C88-4015-A549-E847-BB9EDE5024D1";
+	rename -uid "D301E9EC-4836-05B7-4B78-878657246D99";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "2AED940C-4580-D02A-6B41-EF9054FC2A6D";
+	rename -uid "D8444851-430D-FA74-DE3D-C891B1C48AC1";
 	setAttr ".cdl" 2;
 	setAttr -s 3 ".dli[1:2]"  1 2;
 	setAttr -s 2 ".dli";
@@ -219,7 +218,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "AE1530BA-45D7-E4AB-248F-05B435672B9A";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5751669B-4ECC-EB11-72E3-EE81C38B4D7F";
+	rename -uid "585A13CA-4249-CE1E-85D9-B3B71CDB4F65";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5A42CF36-4FF4-3477-40E1-63A34C7DCCCE";
 	setAttr ".g" yes;
@@ -252,7 +251,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 98\n            -height 0\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n"
 		+ "            -camera \"|camera1_group|camera1\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n"
 		+ "            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n"
-		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1201\n            -height 563\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -bluePencil 1\n            -greasePencils 0\n            -excludeObjectPreset \"All\" \n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1144\n            -height 595\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n"
 		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -autoExpandAllAnimatedShapes 1\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -showUfeItems 1\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n"
 		+ "            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -selectCommand \"print(\\\"\\\")\" \n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n"
@@ -280,8 +279,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n"
 		+ "                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n"
 		+ "\t\t\t\t-removeAllPanels\n\t\t\t\t-ap true\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1_group|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1201\\n    -height 563\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1_group|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1201\\n    -height 563\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1_group|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1144\\n    -height 595\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"|camera1_group|camera1\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1144\\n    -height 595\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -291,1577 +290,10 @@ createNode script -n "sceneConfigurationScriptNode";
 createNode reference -n "DragonGateCaveSetRN";
 	rename -uid "0336B64C-48F2-5014-938F-D4B24F657962";
 	setAttr -s 1591 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
-	setAttr ".phl[11]" 0;
-	setAttr ".phl[12]" 0;
-	setAttr ".phl[13]" 0;
-	setAttr ".phl[14]" 0;
-	setAttr ".phl[15]" 0;
-	setAttr ".phl[16]" 0;
-	setAttr ".phl[17]" 0;
-	setAttr ".phl[18]" 0;
-	setAttr ".phl[19]" 0;
-	setAttr ".phl[20]" 0;
-	setAttr ".phl[21]" 0;
-	setAttr ".phl[22]" 0;
-	setAttr ".phl[23]" 0;
-	setAttr ".phl[24]" 0;
-	setAttr ".phl[25]" 0;
-	setAttr ".phl[26]" 0;
-	setAttr ".phl[27]" 0;
-	setAttr ".phl[28]" 0;
-	setAttr ".phl[29]" 0;
-	setAttr ".phl[30]" 0;
-	setAttr ".phl[31]" 0;
-	setAttr ".phl[32]" 0;
-	setAttr ".phl[33]" 0;
-	setAttr ".phl[34]" 0;
-	setAttr ".phl[35]" 0;
-	setAttr ".phl[36]" 0;
-	setAttr ".phl[37]" 0;
-	setAttr ".phl[38]" 0;
-	setAttr ".phl[39]" 0;
-	setAttr ".phl[40]" 0;
-	setAttr ".phl[41]" 0;
-	setAttr ".phl[42]" 0;
-	setAttr ".phl[43]" 0;
-	setAttr ".phl[44]" 0;
-	setAttr ".phl[45]" 0;
-	setAttr ".phl[46]" 0;
-	setAttr ".phl[47]" 0;
-	setAttr ".phl[48]" 0;
-	setAttr ".phl[49]" 0;
-	setAttr ".phl[50]" 0;
-	setAttr ".phl[51]" 0;
-	setAttr ".phl[52]" 0;
-	setAttr ".phl[53]" 0;
-	setAttr ".phl[54]" 0;
-	setAttr ".phl[55]" 0;
-	setAttr ".phl[56]" 0;
-	setAttr ".phl[57]" 0;
-	setAttr ".phl[58]" 0;
-	setAttr ".phl[59]" 0;
-	setAttr ".phl[60]" 0;
-	setAttr ".phl[61]" 0;
-	setAttr ".phl[62]" 0;
-	setAttr ".phl[63]" 0;
-	setAttr ".phl[64]" 0;
-	setAttr ".phl[65]" 0;
-	setAttr ".phl[66]" 0;
-	setAttr ".phl[67]" 0;
-	setAttr ".phl[68]" 0;
-	setAttr ".phl[69]" 0;
-	setAttr ".phl[70]" 0;
-	setAttr ".phl[71]" 0;
-	setAttr ".phl[72]" 0;
-	setAttr ".phl[73]" 0;
-	setAttr ".phl[74]" 0;
-	setAttr ".phl[75]" 0;
-	setAttr ".phl[76]" 0;
-	setAttr ".phl[77]" 0;
-	setAttr ".phl[78]" 0;
-	setAttr ".phl[79]" 0;
-	setAttr ".phl[80]" 0;
-	setAttr ".phl[81]" 0;
-	setAttr ".phl[82]" 0;
-	setAttr ".phl[83]" 0;
-	setAttr ".phl[84]" 0;
-	setAttr ".phl[85]" 0;
-	setAttr ".phl[86]" 0;
-	setAttr ".phl[87]" 0;
-	setAttr ".phl[88]" 0;
-	setAttr ".phl[89]" 0;
-	setAttr ".phl[90]" 0;
-	setAttr ".phl[91]" 0;
-	setAttr ".phl[92]" 0;
-	setAttr ".phl[93]" 0;
-	setAttr ".phl[94]" 0;
-	setAttr ".phl[95]" 0;
-	setAttr ".phl[96]" 0;
-	setAttr ".phl[97]" 0;
-	setAttr ".phl[98]" 0;
-	setAttr ".phl[99]" 0;
-	setAttr ".phl[100]" 0;
-	setAttr ".phl[101]" 0;
-	setAttr ".phl[102]" 0;
-	setAttr ".phl[103]" 0;
-	setAttr ".phl[104]" 0;
-	setAttr ".phl[105]" 0;
-	setAttr ".phl[106]" 0;
-	setAttr ".phl[107]" 0;
-	setAttr ".phl[108]" 0;
-	setAttr ".phl[109]" 0;
-	setAttr ".phl[110]" 0;
-	setAttr ".phl[111]" 0;
-	setAttr ".phl[112]" 0;
-	setAttr ".phl[113]" 0;
-	setAttr ".phl[114]" 0;
-	setAttr ".phl[115]" 0;
-	setAttr ".phl[116]" 0;
-	setAttr ".phl[117]" 0;
-	setAttr ".phl[118]" 0;
-	setAttr ".phl[119]" 0;
-	setAttr ".phl[120]" 0;
-	setAttr ".phl[121]" 0;
-	setAttr ".phl[122]" 0;
-	setAttr ".phl[123]" 0;
-	setAttr ".phl[124]" 0;
-	setAttr ".phl[125]" 0;
-	setAttr ".phl[126]" 0;
-	setAttr ".phl[127]" 0;
-	setAttr ".phl[128]" 0;
-	setAttr ".phl[129]" 0;
-	setAttr ".phl[130]" 0;
-	setAttr ".phl[131]" 0;
-	setAttr ".phl[132]" 0;
-	setAttr ".phl[133]" 0;
-	setAttr ".phl[134]" 0;
-	setAttr ".phl[135]" 0;
-	setAttr ".phl[136]" 0;
-	setAttr ".phl[137]" 0;
-	setAttr ".phl[138]" 0;
-	setAttr ".phl[139]" 0;
-	setAttr ".phl[140]" 0;
-	setAttr ".phl[141]" 0;
-	setAttr ".phl[142]" 0;
-	setAttr ".phl[143]" 0;
-	setAttr ".phl[144]" 0;
-	setAttr ".phl[145]" 0;
-	setAttr ".phl[146]" 0;
-	setAttr ".phl[147]" 0;
-	setAttr ".phl[148]" 0;
-	setAttr ".phl[149]" 0;
-	setAttr ".phl[150]" 0;
-	setAttr ".phl[151]" 0;
-	setAttr ".phl[152]" 0;
-	setAttr ".phl[153]" 0;
-	setAttr ".phl[154]" 0;
-	setAttr ".phl[155]" 0;
-	setAttr ".phl[156]" 0;
-	setAttr ".phl[157]" 0;
-	setAttr ".phl[158]" 0;
-	setAttr ".phl[159]" 0;
-	setAttr ".phl[160]" 0;
-	setAttr ".phl[161]" 0;
-	setAttr ".phl[162]" 0;
-	setAttr ".phl[163]" 0;
-	setAttr ".phl[164]" 0;
-	setAttr ".phl[165]" 0;
-	setAttr ".phl[166]" 0;
-	setAttr ".phl[167]" 0;
-	setAttr ".phl[168]" 0;
-	setAttr ".phl[169]" 0;
-	setAttr ".phl[170]" 0;
-	setAttr ".phl[171]" 0;
-	setAttr ".phl[172]" 0;
-	setAttr ".phl[173]" 0;
-	setAttr ".phl[174]" 0;
-	setAttr ".phl[175]" 0;
-	setAttr ".phl[176]" 0;
-	setAttr ".phl[177]" 0;
-	setAttr ".phl[178]" 0;
-	setAttr ".phl[179]" 0;
-	setAttr ".phl[180]" 0;
-	setAttr ".phl[181]" 0;
-	setAttr ".phl[182]" 0;
-	setAttr ".phl[183]" 0;
-	setAttr ".phl[184]" 0;
-	setAttr ".phl[185]" 0;
-	setAttr ".phl[186]" 0;
-	setAttr ".phl[187]" 0;
-	setAttr ".phl[188]" 0;
-	setAttr ".phl[189]" 0;
-	setAttr ".phl[190]" 0;
-	setAttr ".phl[191]" 0;
-	setAttr ".phl[192]" 0;
-	setAttr ".phl[193]" 0;
-	setAttr ".phl[194]" 0;
-	setAttr ".phl[195]" 0;
-	setAttr ".phl[196]" 0;
-	setAttr ".phl[197]" 0;
-	setAttr ".phl[198]" 0;
-	setAttr ".phl[199]" 0;
-	setAttr ".phl[200]" 0;
-	setAttr ".phl[201]" 0;
-	setAttr ".phl[202]" 0;
-	setAttr ".phl[203]" 0;
-	setAttr ".phl[204]" 0;
-	setAttr ".phl[205]" 0;
-	setAttr ".phl[206]" 0;
-	setAttr ".phl[207]" 0;
-	setAttr ".phl[208]" 0;
-	setAttr ".phl[209]" 0;
-	setAttr ".phl[210]" 0;
-	setAttr ".phl[211]" 0;
-	setAttr ".phl[212]" 0;
-	setAttr ".phl[213]" 0;
-	setAttr ".phl[214]" 0;
-	setAttr ".phl[215]" 0;
-	setAttr ".phl[216]" 0;
-	setAttr ".phl[217]" 0;
-	setAttr ".phl[218]" 0;
-	setAttr ".phl[219]" 0;
-	setAttr ".phl[220]" 0;
-	setAttr ".phl[221]" 0;
-	setAttr ".phl[222]" 0;
-	setAttr ".phl[223]" 0;
-	setAttr ".phl[224]" 0;
-	setAttr ".phl[225]" 0;
-	setAttr ".phl[226]" 0;
-	setAttr ".phl[227]" 0;
-	setAttr ".phl[228]" 0;
-	setAttr ".phl[229]" 0;
-	setAttr ".phl[230]" 0;
-	setAttr ".phl[231]" 0;
-	setAttr ".phl[232]" 0;
-	setAttr ".phl[233]" 0;
-	setAttr ".phl[234]" 0;
-	setAttr ".phl[235]" 0;
-	setAttr ".phl[236]" 0;
-	setAttr ".phl[237]" 0;
-	setAttr ".phl[238]" 0;
-	setAttr ".phl[239]" 0;
-	setAttr ".phl[240]" 0;
-	setAttr ".phl[241]" 0;
-	setAttr ".phl[242]" 0;
-	setAttr ".phl[243]" 0;
-	setAttr ".phl[244]" 0;
-	setAttr ".phl[245]" 0;
-	setAttr ".phl[246]" 0;
-	setAttr ".phl[247]" 0;
-	setAttr ".phl[248]" 0;
-	setAttr ".phl[249]" 0;
-	setAttr ".phl[250]" 0;
-	setAttr ".phl[251]" 0;
-	setAttr ".phl[252]" 0;
-	setAttr ".phl[253]" 0;
-	setAttr ".phl[254]" 0;
-	setAttr ".phl[255]" 0;
-	setAttr ".phl[256]" 0;
-	setAttr ".phl[257]" 0;
-	setAttr ".phl[258]" 0;
-	setAttr ".phl[259]" 0;
-	setAttr ".phl[260]" 0;
-	setAttr ".phl[261]" 0;
-	setAttr ".phl[262]" 0;
-	setAttr ".phl[263]" 0;
-	setAttr ".phl[264]" 0;
-	setAttr ".phl[265]" 0;
-	setAttr ".phl[266]" 0;
-	setAttr ".phl[267]" 0;
-	setAttr ".phl[268]" 0;
-	setAttr ".phl[269]" 0;
-	setAttr ".phl[270]" 0;
-	setAttr ".phl[271]" 0;
-	setAttr ".phl[272]" 0;
-	setAttr ".phl[273]" 0;
-	setAttr ".phl[274]" 0;
-	setAttr ".phl[275]" 0;
-	setAttr ".phl[276]" 0;
-	setAttr ".phl[277]" 0;
-	setAttr ".phl[278]" 0;
-	setAttr ".phl[279]" 0;
-	setAttr ".phl[280]" 0;
-	setAttr ".phl[281]" 0;
-	setAttr ".phl[282]" 0;
-	setAttr ".phl[283]" 0;
-	setAttr ".phl[284]" 0;
-	setAttr ".phl[285]" 0;
-	setAttr ".phl[286]" 0;
-	setAttr ".phl[287]" 0;
-	setAttr ".phl[288]" 0;
-	setAttr ".phl[289]" 0;
-	setAttr ".phl[290]" 0;
-	setAttr ".phl[291]" 0;
-	setAttr ".phl[292]" 0;
-	setAttr ".phl[293]" 0;
-	setAttr ".phl[294]" 0;
-	setAttr ".phl[295]" 0;
-	setAttr ".phl[296]" 0;
-	setAttr ".phl[297]" 0;
-	setAttr ".phl[298]" 0;
-	setAttr ".phl[299]" 0;
-	setAttr ".phl[300]" 0;
-	setAttr ".phl[301]" 0;
-	setAttr ".phl[302]" 0;
-	setAttr ".phl[303]" 0;
-	setAttr ".phl[304]" 0;
-	setAttr ".phl[305]" 0;
-	setAttr ".phl[306]" 0;
-	setAttr ".phl[307]" 0;
-	setAttr ".phl[308]" 0;
-	setAttr ".phl[309]" 0;
-	setAttr ".phl[310]" 0;
-	setAttr ".phl[311]" 0;
-	setAttr ".phl[312]" 0;
-	setAttr ".phl[313]" 0;
-	setAttr ".phl[314]" 0;
-	setAttr ".phl[315]" 0;
-	setAttr ".phl[316]" 0;
-	setAttr ".phl[317]" 0;
-	setAttr ".phl[318]" 0;
-	setAttr ".phl[319]" 0;
-	setAttr ".phl[320]" 0;
-	setAttr ".phl[321]" 0;
-	setAttr ".phl[322]" 0;
-	setAttr ".phl[323]" 0;
-	setAttr ".phl[324]" 0;
-	setAttr ".phl[325]" 0;
-	setAttr ".phl[326]" 0;
-	setAttr ".phl[327]" 0;
-	setAttr ".phl[328]" 0;
-	setAttr ".phl[329]" 0;
-	setAttr ".phl[330]" 0;
-	setAttr ".phl[331]" 0;
-	setAttr ".phl[332]" 0;
-	setAttr ".phl[333]" 0;
-	setAttr ".phl[334]" 0;
-	setAttr ".phl[335]" 0;
-	setAttr ".phl[336]" 0;
-	setAttr ".phl[337]" 0;
-	setAttr ".phl[338]" 0;
-	setAttr ".phl[339]" 0;
-	setAttr ".phl[340]" 0;
-	setAttr ".phl[341]" 0;
-	setAttr ".phl[342]" 0;
-	setAttr ".phl[343]" 0;
-	setAttr ".phl[344]" 0;
-	setAttr ".phl[345]" 0;
-	setAttr ".phl[346]" 0;
-	setAttr ".phl[347]" 0;
-	setAttr ".phl[348]" 0;
-	setAttr ".phl[349]" 0;
-	setAttr ".phl[350]" 0;
-	setAttr ".phl[351]" 0;
-	setAttr ".phl[352]" 0;
-	setAttr ".phl[353]" 0;
-	setAttr ".phl[354]" 0;
-	setAttr ".phl[355]" 0;
-	setAttr ".phl[356]" 0;
-	setAttr ".phl[357]" 0;
-	setAttr ".phl[358]" 0;
-	setAttr ".phl[359]" 0;
-	setAttr ".phl[360]" 0;
-	setAttr ".phl[361]" 0;
-	setAttr ".phl[362]" 0;
-	setAttr ".phl[363]" 0;
-	setAttr ".phl[364]" 0;
-	setAttr ".phl[365]" 0;
-	setAttr ".phl[366]" 0;
-	setAttr ".phl[367]" 0;
-	setAttr ".phl[368]" 0;
-	setAttr ".phl[369]" 0;
-	setAttr ".phl[370]" 0;
-	setAttr ".phl[371]" 0;
-	setAttr ".phl[372]" 0;
-	setAttr ".phl[373]" 0;
-	setAttr ".phl[374]" 0;
-	setAttr ".phl[375]" 0;
-	setAttr ".phl[376]" 0;
-	setAttr ".phl[377]" 0;
-	setAttr ".phl[378]" 0;
-	setAttr ".phl[379]" 0;
-	setAttr ".phl[380]" 0;
-	setAttr ".phl[381]" 0;
-	setAttr ".phl[382]" 0;
-	setAttr ".phl[383]" 0;
-	setAttr ".phl[384]" 0;
-	setAttr ".phl[385]" 0;
-	setAttr ".phl[386]" 0;
-	setAttr ".phl[387]" 0;
-	setAttr ".phl[388]" 0;
-	setAttr ".phl[389]" 0;
-	setAttr ".phl[390]" 0;
-	setAttr ".phl[391]" 0;
-	setAttr ".phl[392]" 0;
-	setAttr ".phl[393]" 0;
-	setAttr ".phl[394]" 0;
-	setAttr ".phl[395]" 0;
-	setAttr ".phl[396]" 0;
-	setAttr ".phl[397]" 0;
-	setAttr ".phl[398]" 0;
-	setAttr ".phl[399]" 0;
-	setAttr ".phl[400]" 0;
-	setAttr ".phl[401]" 0;
-	setAttr ".phl[402]" 0;
-	setAttr ".phl[403]" 0;
-	setAttr ".phl[404]" 0;
-	setAttr ".phl[405]" 0;
-	setAttr ".phl[406]" 0;
-	setAttr ".phl[407]" 0;
-	setAttr ".phl[408]" 0;
-	setAttr ".phl[409]" 0;
-	setAttr ".phl[410]" 0;
-	setAttr ".phl[411]" 0;
-	setAttr ".phl[412]" 0;
-	setAttr ".phl[413]" 0;
-	setAttr ".phl[414]" 0;
-	setAttr ".phl[415]" 0;
-	setAttr ".phl[416]" 0;
-	setAttr ".phl[417]" 0;
-	setAttr ".phl[418]" 0;
-	setAttr ".phl[419]" 0;
-	setAttr ".phl[420]" 0;
-	setAttr ".phl[421]" 0;
-	setAttr ".phl[422]" 0;
-	setAttr ".phl[423]" 0;
-	setAttr ".phl[424]" 0;
-	setAttr ".phl[425]" 0;
-	setAttr ".phl[426]" 0;
-	setAttr ".phl[427]" 0;
-	setAttr ".phl[428]" 0;
-	setAttr ".phl[429]" 0;
-	setAttr ".phl[430]" 0;
-	setAttr ".phl[431]" 0;
-	setAttr ".phl[432]" 0;
-	setAttr ".phl[433]" 0;
-	setAttr ".phl[434]" 0;
-	setAttr ".phl[435]" 0;
-	setAttr ".phl[436]" 0;
-	setAttr ".phl[437]" 0;
-	setAttr ".phl[438]" 0;
-	setAttr ".phl[439]" 0;
-	setAttr ".phl[440]" 0;
-	setAttr ".phl[441]" 0;
-	setAttr ".phl[442]" 0;
-	setAttr ".phl[443]" 0;
-	setAttr ".phl[444]" 0;
-	setAttr ".phl[445]" 0;
-	setAttr ".phl[446]" 0;
-	setAttr ".phl[447]" 0;
-	setAttr ".phl[448]" 0;
-	setAttr ".phl[449]" 0;
-	setAttr ".phl[450]" 0;
-	setAttr ".phl[451]" 0;
-	setAttr ".phl[452]" 0;
-	setAttr ".phl[453]" 0;
-	setAttr ".phl[454]" 0;
-	setAttr ".phl[455]" 0;
-	setAttr ".phl[456]" 0;
-	setAttr ".phl[457]" 0;
-	setAttr ".phl[458]" 0;
-	setAttr ".phl[459]" 0;
-	setAttr ".phl[460]" 0;
-	setAttr ".phl[461]" 0;
-	setAttr ".phl[462]" 0;
-	setAttr ".phl[463]" 0;
-	setAttr ".phl[464]" 0;
-	setAttr ".phl[465]" 0;
-	setAttr ".phl[466]" 0;
-	setAttr ".phl[467]" 0;
-	setAttr ".phl[468]" 0;
-	setAttr ".phl[469]" 0;
-	setAttr ".phl[470]" 0;
-	setAttr ".phl[471]" 0;
-	setAttr ".phl[472]" 0;
-	setAttr ".phl[473]" 0;
-	setAttr ".phl[474]" 0;
-	setAttr ".phl[475]" 0;
-	setAttr ".phl[476]" 0;
-	setAttr ".phl[477]" 0;
-	setAttr ".phl[478]" 0;
-	setAttr ".phl[479]" 0;
-	setAttr ".phl[480]" 0;
-	setAttr ".phl[481]" 0;
-	setAttr ".phl[482]" 0;
-	setAttr ".phl[483]" 0;
-	setAttr ".phl[484]" 0;
-	setAttr ".phl[485]" 0;
-	setAttr ".phl[486]" 0;
-	setAttr ".phl[487]" 0;
-	setAttr ".phl[488]" 0;
-	setAttr ".phl[489]" 0;
-	setAttr ".phl[490]" 0;
-	setAttr ".phl[491]" 0;
-	setAttr ".phl[492]" 0;
-	setAttr ".phl[493]" 0;
-	setAttr ".phl[494]" 0;
-	setAttr ".phl[495]" 0;
-	setAttr ".phl[496]" 0;
-	setAttr ".phl[497]" 0;
-	setAttr ".phl[498]" 0;
-	setAttr ".phl[499]" 0;
-	setAttr ".phl[500]" 0;
-	setAttr ".phl[501]" 0;
-	setAttr ".phl[502]" 0;
-	setAttr ".phl[503]" 0;
-	setAttr ".phl[504]" 0;
-	setAttr ".phl[505]" 0;
-	setAttr ".phl[506]" 0;
-	setAttr ".phl[507]" 0;
-	setAttr ".phl[508]" 0;
-	setAttr ".phl[509]" 0;
-	setAttr ".phl[510]" 0;
-	setAttr ".phl[511]" 0;
-	setAttr ".phl[512]" 0;
-	setAttr ".phl[513]" 0;
-	setAttr ".phl[514]" 0;
-	setAttr ".phl[515]" 0;
-	setAttr ".phl[516]" 0;
-	setAttr ".phl[517]" 0;
-	setAttr ".phl[518]" 0;
-	setAttr ".phl[519]" 0;
-	setAttr ".phl[520]" 0;
-	setAttr ".phl[521]" 0;
-	setAttr ".phl[522]" 0;
-	setAttr ".phl[523]" 0;
-	setAttr ".phl[524]" 0;
-	setAttr ".phl[525]" 0;
-	setAttr ".phl[526]" 0;
-	setAttr ".phl[527]" 0;
-	setAttr ".phl[528]" 0;
-	setAttr ".phl[529]" 0;
-	setAttr ".phl[530]" 0;
-	setAttr ".phl[531]" 0;
-	setAttr ".phl[532]" 0;
-	setAttr ".phl[533]" 0;
-	setAttr ".phl[534]" 0;
-	setAttr ".phl[535]" 0;
-	setAttr ".phl[536]" 0;
-	setAttr ".phl[537]" 0;
-	setAttr ".phl[538]" 0;
-	setAttr ".phl[539]" 0;
-	setAttr ".phl[540]" 0;
-	setAttr ".phl[541]" 0;
-	setAttr ".phl[542]" 0;
-	setAttr ".phl[543]" 0;
-	setAttr ".phl[544]" 0;
-	setAttr ".phl[545]" 0;
-	setAttr ".phl[546]" 0;
-	setAttr ".phl[547]" 0;
-	setAttr ".phl[548]" 0;
-	setAttr ".phl[549]" 0;
-	setAttr ".phl[550]" 0;
-	setAttr ".phl[551]" 0;
-	setAttr ".phl[552]" 0;
-	setAttr ".phl[553]" 0;
-	setAttr ".phl[554]" 0;
-	setAttr ".phl[555]" 0;
-	setAttr ".phl[556]" 0;
-	setAttr ".phl[557]" 0;
-	setAttr ".phl[558]" 0;
-	setAttr ".phl[559]" 0;
-	setAttr ".phl[560]" 0;
-	setAttr ".phl[561]" 0;
-	setAttr ".phl[562]" 0;
-	setAttr ".phl[563]" 0;
-	setAttr ".phl[564]" 0;
-	setAttr ".phl[565]" 0;
-	setAttr ".phl[566]" 0;
-	setAttr ".phl[567]" 0;
-	setAttr ".phl[568]" 0;
-	setAttr ".phl[569]" 0;
-	setAttr ".phl[570]" 0;
-	setAttr ".phl[571]" 0;
-	setAttr ".phl[572]" 0;
-	setAttr ".phl[573]" 0;
-	setAttr ".phl[574]" 0;
-	setAttr ".phl[575]" 0;
-	setAttr ".phl[576]" 0;
-	setAttr ".phl[577]" 0;
-	setAttr ".phl[578]" 0;
-	setAttr ".phl[579]" 0;
-	setAttr ".phl[580]" 0;
-	setAttr ".phl[581]" 0;
-	setAttr ".phl[582]" 0;
-	setAttr ".phl[583]" 0;
-	setAttr ".phl[584]" 0;
-	setAttr ".phl[585]" 0;
-	setAttr ".phl[586]" 0;
-	setAttr ".phl[587]" 0;
-	setAttr ".phl[588]" 0;
-	setAttr ".phl[589]" 0;
-	setAttr ".phl[590]" 0;
-	setAttr ".phl[591]" 0;
-	setAttr ".phl[592]" 0;
-	setAttr ".phl[593]" 0;
-	setAttr ".phl[594]" 0;
-	setAttr ".phl[595]" 0;
-	setAttr ".phl[596]" 0;
-	setAttr ".phl[597]" 0;
-	setAttr ".phl[598]" 0;
-	setAttr ".phl[599]" 0;
-	setAttr ".phl[600]" 0;
-	setAttr ".phl[601]" 0;
-	setAttr ".phl[602]" 0;
-	setAttr ".phl[603]" 0;
-	setAttr ".phl[604]" 0;
-	setAttr ".phl[605]" 0;
-	setAttr ".phl[606]" 0;
-	setAttr ".phl[607]" 0;
-	setAttr ".phl[608]" 0;
-	setAttr ".phl[609]" 0;
-	setAttr ".phl[610]" 0;
-	setAttr ".phl[611]" 0;
-	setAttr ".phl[612]" 0;
-	setAttr ".phl[613]" 0;
-	setAttr ".phl[614]" 0;
-	setAttr ".phl[615]" 0;
-	setAttr ".phl[616]" 0;
-	setAttr ".phl[617]" 0;
-	setAttr ".phl[618]" 0;
-	setAttr ".phl[619]" 0;
-	setAttr ".phl[620]" 0;
-	setAttr ".phl[621]" 0;
-	setAttr ".phl[622]" 0;
-	setAttr ".phl[623]" 0;
-	setAttr ".phl[624]" 0;
-	setAttr ".phl[625]" 0;
-	setAttr ".phl[626]" 0;
-	setAttr ".phl[627]" 0;
-	setAttr ".phl[628]" 0;
-	setAttr ".phl[629]" 0;
-	setAttr ".phl[630]" 0;
-	setAttr ".phl[631]" 0;
-	setAttr ".phl[632]" 0;
-	setAttr ".phl[633]" 0;
-	setAttr ".phl[634]" 0;
-	setAttr ".phl[635]" 0;
-	setAttr ".phl[636]" 0;
-	setAttr ".phl[637]" 0;
-	setAttr ".phl[638]" 0;
-	setAttr ".phl[639]" 0;
-	setAttr ".phl[640]" 0;
-	setAttr ".phl[641]" 0;
-	setAttr ".phl[642]" 0;
-	setAttr ".phl[643]" 0;
-	setAttr ".phl[644]" 0;
-	setAttr ".phl[645]" 0;
-	setAttr ".phl[646]" 0;
-	setAttr ".phl[647]" 0;
-	setAttr ".phl[648]" 0;
-	setAttr ".phl[649]" 0;
-	setAttr ".phl[650]" 0;
-	setAttr ".phl[651]" 0;
-	setAttr ".phl[652]" 0;
-	setAttr ".phl[653]" 0;
-	setAttr ".phl[654]" 0;
-	setAttr ".phl[655]" 0;
-	setAttr ".phl[656]" 0;
-	setAttr ".phl[657]" 0;
-	setAttr ".phl[658]" 0;
-	setAttr ".phl[659]" 0;
-	setAttr ".phl[660]" 0;
-	setAttr ".phl[661]" 0;
-	setAttr ".phl[662]" 0;
-	setAttr ".phl[663]" 0;
-	setAttr ".phl[664]" 0;
-	setAttr ".phl[665]" 0;
-	setAttr ".phl[666]" 0;
-	setAttr ".phl[667]" 0;
-	setAttr ".phl[668]" 0;
-	setAttr ".phl[669]" 0;
-	setAttr ".phl[670]" 0;
-	setAttr ".phl[671]" 0;
-	setAttr ".phl[672]" 0;
-	setAttr ".phl[673]" 0;
-	setAttr ".phl[674]" 0;
-	setAttr ".phl[675]" 0;
-	setAttr ".phl[676]" 0;
-	setAttr ".phl[677]" 0;
-	setAttr ".phl[678]" 0;
-	setAttr ".phl[679]" 0;
-	setAttr ".phl[680]" 0;
-	setAttr ".phl[681]" 0;
-	setAttr ".phl[682]" 0;
-	setAttr ".phl[683]" 0;
-	setAttr ".phl[684]" 0;
-	setAttr ".phl[685]" 0;
-	setAttr ".phl[686]" 0;
-	setAttr ".phl[687]" 0;
-	setAttr ".phl[688]" 0;
-	setAttr ".phl[689]" 0;
-	setAttr ".phl[690]" 0;
-	setAttr ".phl[691]" 0;
-	setAttr ".phl[692]" 0;
-	setAttr ".phl[693]" 0;
-	setAttr ".phl[694]" 0;
-	setAttr ".phl[695]" 0;
-	setAttr ".phl[696]" 0;
-	setAttr ".phl[697]" 0;
-	setAttr ".phl[698]" 0;
-	setAttr ".phl[699]" 0;
-	setAttr ".phl[700]" 0;
-	setAttr ".phl[701]" 0;
-	setAttr ".phl[702]" 0;
-	setAttr ".phl[703]" 0;
-	setAttr ".phl[704]" 0;
-	setAttr ".phl[705]" 0;
-	setAttr ".phl[706]" 0;
-	setAttr ".phl[707]" 0;
-	setAttr ".phl[708]" 0;
-	setAttr ".phl[709]" 0;
-	setAttr ".phl[710]" 0;
-	setAttr ".phl[711]" 0;
-	setAttr ".phl[712]" 0;
-	setAttr ".phl[713]" 0;
-	setAttr ".phl[714]" 0;
-	setAttr ".phl[715]" 0;
-	setAttr ".phl[716]" 0;
-	setAttr ".phl[717]" 0;
-	setAttr ".phl[718]" 0;
-	setAttr ".phl[719]" 0;
-	setAttr ".phl[720]" 0;
-	setAttr ".phl[721]" 0;
-	setAttr ".phl[722]" 0;
-	setAttr ".phl[723]" 0;
-	setAttr ".phl[724]" 0;
-	setAttr ".phl[725]" 0;
-	setAttr ".phl[726]" 0;
-	setAttr ".phl[727]" 0;
-	setAttr ".phl[728]" 0;
-	setAttr ".phl[729]" 0;
-	setAttr ".phl[730]" 0;
-	setAttr ".phl[731]" 0;
-	setAttr ".phl[732]" 0;
-	setAttr ".phl[733]" 0;
-	setAttr ".phl[734]" 0;
-	setAttr ".phl[735]" 0;
-	setAttr ".phl[736]" 0;
-	setAttr ".phl[737]" 0;
-	setAttr ".phl[738]" 0;
-	setAttr ".phl[739]" 0;
-	setAttr ".phl[740]" 0;
-	setAttr ".phl[741]" 0;
-	setAttr ".phl[742]" 0;
-	setAttr ".phl[743]" 0;
-	setAttr ".phl[744]" 0;
-	setAttr ".phl[745]" 0;
-	setAttr ".phl[746]" 0;
-	setAttr ".phl[747]" 0;
-	setAttr ".phl[748]" 0;
-	setAttr ".phl[749]" 0;
-	setAttr ".phl[750]" 0;
-	setAttr ".phl[751]" 0;
-	setAttr ".phl[752]" 0;
-	setAttr ".phl[753]" 0;
-	setAttr ".phl[754]" 0;
-	setAttr ".phl[755]" 0;
-	setAttr ".phl[756]" 0;
-	setAttr ".phl[757]" 0;
-	setAttr ".phl[758]" 0;
-	setAttr ".phl[759]" 0;
-	setAttr ".phl[760]" 0;
-	setAttr ".phl[761]" 0;
-	setAttr ".phl[762]" 0;
-	setAttr ".phl[763]" 0;
-	setAttr ".phl[764]" 0;
-	setAttr ".phl[765]" 0;
-	setAttr ".phl[766]" 0;
-	setAttr ".phl[767]" 0;
-	setAttr ".phl[768]" 0;
-	setAttr ".phl[769]" 0;
-	setAttr ".phl[770]" 0;
-	setAttr ".phl[771]" 0;
-	setAttr ".phl[772]" 0;
-	setAttr ".phl[773]" 0;
-	setAttr ".phl[774]" 0;
-	setAttr ".phl[775]" 0;
-	setAttr ".phl[776]" 0;
-	setAttr ".phl[777]" 0;
-	setAttr ".phl[778]" 0;
-	setAttr ".phl[779]" 0;
-	setAttr ".phl[780]" 0;
-	setAttr ".phl[781]" 0;
-	setAttr ".phl[782]" 0;
-	setAttr ".phl[783]" 0;
-	setAttr ".phl[784]" 0;
-	setAttr ".phl[785]" 0;
-	setAttr ".phl[786]" 0;
-	setAttr ".phl[787]" 0;
-	setAttr ".phl[788]" 0;
-	setAttr ".phl[789]" 0;
-	setAttr ".phl[790]" 0;
-	setAttr ".phl[791]" 0;
-	setAttr ".phl[792]" 0;
-	setAttr ".phl[793]" 0;
-	setAttr ".phl[794]" 0;
-	setAttr ".phl[795]" 0;
-	setAttr ".phl[796]" 0;
-	setAttr ".phl[797]" 0;
-	setAttr ".phl[798]" 0;
-	setAttr ".phl[799]" 0;
-	setAttr ".phl[800]" 0;
-	setAttr ".phl[801]" 0;
-	setAttr ".phl[802]" 0;
-	setAttr ".phl[803]" 0;
-	setAttr ".phl[804]" 0;
-	setAttr ".phl[805]" 0;
-	setAttr ".phl[806]" 0;
-	setAttr ".phl[807]" 0;
-	setAttr ".phl[808]" 0;
-	setAttr ".phl[809]" 0;
-	setAttr ".phl[810]" 0;
-	setAttr ".phl[811]" 0;
-	setAttr ".phl[812]" 0;
-	setAttr ".phl[813]" 0;
-	setAttr ".phl[814]" 0;
-	setAttr ".phl[815]" 0;
-	setAttr ".phl[816]" 0;
-	setAttr ".phl[817]" 0;
-	setAttr ".phl[818]" 0;
-	setAttr ".phl[819]" 0;
-	setAttr ".phl[820]" 0;
-	setAttr ".phl[821]" 0;
-	setAttr ".phl[822]" 0;
-	setAttr ".phl[823]" 0;
-	setAttr ".phl[824]" 0;
-	setAttr ".phl[825]" 0;
-	setAttr ".phl[826]" 0;
-	setAttr ".phl[827]" 0;
-	setAttr ".phl[828]" 0;
-	setAttr ".phl[829]" 0;
-	setAttr ".phl[830]" 0;
-	setAttr ".phl[831]" 0;
-	setAttr ".phl[832]" 0;
-	setAttr ".phl[833]" 0;
-	setAttr ".phl[834]" 0;
-	setAttr ".phl[835]" 0;
-	setAttr ".phl[836]" 0;
-	setAttr ".phl[837]" 0;
-	setAttr ".phl[838]" 0;
-	setAttr ".phl[839]" 0;
-	setAttr ".phl[840]" 0;
-	setAttr ".phl[841]" 0;
-	setAttr ".phl[842]" 0;
-	setAttr ".phl[843]" 0;
-	setAttr ".phl[844]" 0;
-	setAttr ".phl[845]" 0;
-	setAttr ".phl[846]" 0;
-	setAttr ".phl[847]" 0;
-	setAttr ".phl[848]" 0;
-	setAttr ".phl[849]" 0;
-	setAttr ".phl[850]" 0;
-	setAttr ".phl[851]" 0;
-	setAttr ".phl[852]" 0;
-	setAttr ".phl[853]" 0;
-	setAttr ".phl[854]" 0;
-	setAttr ".phl[855]" 0;
-	setAttr ".phl[856]" 0;
-	setAttr ".phl[857]" 0;
-	setAttr ".phl[858]" 0;
-	setAttr ".phl[859]" 0;
-	setAttr ".phl[860]" 0;
-	setAttr ".phl[861]" 0;
-	setAttr ".phl[862]" 0;
-	setAttr ".phl[863]" 0;
-	setAttr ".phl[864]" 0;
-	setAttr ".phl[865]" 0;
-	setAttr ".phl[866]" 0;
-	setAttr ".phl[867]" 0;
-	setAttr ".phl[868]" 0;
-	setAttr ".phl[869]" 0;
-	setAttr ".phl[870]" 0;
-	setAttr ".phl[871]" 0;
-	setAttr ".phl[872]" 0;
-	setAttr ".phl[873]" 0;
-	setAttr ".phl[874]" 0;
-	setAttr ".phl[875]" 0;
-	setAttr ".phl[876]" 0;
-	setAttr ".phl[877]" 0;
-	setAttr ".phl[878]" 0;
-	setAttr ".phl[879]" 0;
-	setAttr ".phl[880]" 0;
-	setAttr ".phl[881]" 0;
-	setAttr ".phl[882]" 0;
-	setAttr ".phl[883]" 0;
-	setAttr ".phl[884]" 0;
-	setAttr ".phl[885]" 0;
-	setAttr ".phl[886]" 0;
-	setAttr ".phl[887]" 0;
-	setAttr ".phl[888]" 0;
-	setAttr ".phl[889]" 0;
-	setAttr ".phl[890]" 0;
-	setAttr ".phl[891]" 0;
-	setAttr ".phl[892]" 0;
-	setAttr ".phl[893]" 0;
-	setAttr ".phl[894]" 0;
-	setAttr ".phl[895]" 0;
-	setAttr ".phl[896]" 0;
-	setAttr ".phl[897]" 0;
-	setAttr ".phl[898]" 0;
-	setAttr ".phl[899]" 0;
-	setAttr ".phl[900]" 0;
-	setAttr ".phl[901]" 0;
-	setAttr ".phl[902]" 0;
-	setAttr ".phl[903]" 0;
-	setAttr ".phl[904]" 0;
-	setAttr ".phl[905]" 0;
-	setAttr ".phl[906]" 0;
-	setAttr ".phl[907]" 0;
-	setAttr ".phl[908]" 0;
-	setAttr ".phl[909]" 0;
-	setAttr ".phl[910]" 0;
-	setAttr ".phl[911]" 0;
-	setAttr ".phl[912]" 0;
-	setAttr ".phl[913]" 0;
-	setAttr ".phl[914]" 0;
-	setAttr ".phl[915]" 0;
-	setAttr ".phl[916]" 0;
-	setAttr ".phl[917]" 0;
-	setAttr ".phl[918]" 0;
-	setAttr ".phl[919]" 0;
-	setAttr ".phl[920]" 0;
-	setAttr ".phl[921]" 0;
-	setAttr ".phl[922]" 0;
-	setAttr ".phl[923]" 0;
-	setAttr ".phl[924]" 0;
-	setAttr ".phl[925]" 0;
-	setAttr ".phl[926]" 0;
-	setAttr ".phl[927]" 0;
-	setAttr ".phl[928]" 0;
-	setAttr ".phl[929]" 0;
-	setAttr ".phl[930]" 0;
-	setAttr ".phl[931]" 0;
-	setAttr ".phl[932]" 0;
-	setAttr ".phl[933]" 0;
-	setAttr ".phl[934]" 0;
-	setAttr ".phl[935]" 0;
-	setAttr ".phl[936]" 0;
-	setAttr ".phl[937]" 0;
-	setAttr ".phl[938]" 0;
-	setAttr ".phl[939]" 0;
-	setAttr ".phl[940]" 0;
-	setAttr ".phl[941]" 0;
-	setAttr ".phl[942]" 0;
-	setAttr ".phl[943]" 0;
-	setAttr ".phl[944]" 0;
-	setAttr ".phl[945]" 0;
-	setAttr ".phl[946]" 0;
-	setAttr ".phl[947]" 0;
-	setAttr ".phl[948]" 0;
-	setAttr ".phl[949]" 0;
-	setAttr ".phl[950]" 0;
-	setAttr ".phl[951]" 0;
-	setAttr ".phl[952]" 0;
-	setAttr ".phl[953]" 0;
-	setAttr ".phl[954]" 0;
-	setAttr ".phl[955]" 0;
-	setAttr ".phl[956]" 0;
-	setAttr ".phl[957]" 0;
-	setAttr ".phl[958]" 0;
-	setAttr ".phl[959]" 0;
-	setAttr ".phl[960]" 0;
-	setAttr ".phl[961]" 0;
-	setAttr ".phl[962]" 0;
-	setAttr ".phl[963]" 0;
-	setAttr ".phl[964]" 0;
-	setAttr ".phl[965]" 0;
-	setAttr ".phl[966]" 0;
-	setAttr ".phl[967]" 0;
-	setAttr ".phl[968]" 0;
-	setAttr ".phl[969]" 0;
-	setAttr ".phl[970]" 0;
-	setAttr ".phl[971]" 0;
-	setAttr ".phl[972]" 0;
-	setAttr ".phl[973]" 0;
-	setAttr ".phl[974]" 0;
-	setAttr ".phl[975]" 0;
-	setAttr ".phl[976]" 0;
-	setAttr ".phl[977]" 0;
-	setAttr ".phl[978]" 0;
-	setAttr ".phl[979]" 0;
-	setAttr ".phl[980]" 0;
-	setAttr ".phl[981]" 0;
-	setAttr ".phl[982]" 0;
-	setAttr ".phl[983]" 0;
-	setAttr ".phl[984]" 0;
-	setAttr ".phl[985]" 0;
-	setAttr ".phl[986]" 0;
-	setAttr ".phl[987]" 0;
-	setAttr ".phl[988]" 0;
-	setAttr ".phl[989]" 0;
-	setAttr ".phl[990]" 0;
-	setAttr ".phl[991]" 0;
-	setAttr ".phl[992]" 0;
-	setAttr ".phl[993]" 0;
-	setAttr ".phl[994]" 0;
-	setAttr ".phl[995]" 0;
-	setAttr ".phl[996]" 0;
-	setAttr ".phl[997]" 0;
-	setAttr ".phl[998]" 0;
-	setAttr ".phl[999]" 0;
-	setAttr ".phl[1000]" 0;
-	setAttr ".phl[1001]" 0;
-	setAttr ".phl[1002]" 0;
-	setAttr ".phl[1003]" 0;
-	setAttr ".phl[1004]" 0;
-	setAttr ".phl[1005]" 0;
-	setAttr ".phl[1006]" 0;
-	setAttr ".phl[1007]" 0;
-	setAttr ".phl[1008]" 0;
-	setAttr ".phl[1009]" 0;
-	setAttr ".phl[1010]" 0;
-	setAttr ".phl[1011]" 0;
-	setAttr ".phl[1012]" 0;
-	setAttr ".phl[1013]" 0;
-	setAttr ".phl[1014]" 0;
-	setAttr ".phl[1015]" 0;
-	setAttr ".phl[1016]" 0;
-	setAttr ".phl[1017]" 0;
-	setAttr ".phl[1018]" 0;
-	setAttr ".phl[1019]" 0;
-	setAttr ".phl[1020]" 0;
-	setAttr ".phl[1021]" 0;
-	setAttr ".phl[1022]" 0;
-	setAttr ".phl[1023]" 0;
-	setAttr ".phl[1024]" 0;
-	setAttr ".phl[1025]" 0;
-	setAttr ".phl[1026]" 0;
-	setAttr ".phl[1027]" 0;
-	setAttr ".phl[1028]" 0;
-	setAttr ".phl[1029]" 0;
-	setAttr ".phl[1030]" 0;
-	setAttr ".phl[1031]" 0;
-	setAttr ".phl[1032]" 0;
-	setAttr ".phl[1033]" 0;
-	setAttr ".phl[1034]" 0;
-	setAttr ".phl[1035]" 0;
-	setAttr ".phl[1036]" 0;
-	setAttr ".phl[1037]" 0;
-	setAttr ".phl[1038]" 0;
-	setAttr ".phl[1039]" 0;
-	setAttr ".phl[1040]" 0;
-	setAttr ".phl[1041]" 0;
-	setAttr ".phl[1042]" 0;
-	setAttr ".phl[1043]" 0;
-	setAttr ".phl[1044]" 0;
-	setAttr ".phl[1045]" 0;
-	setAttr ".phl[1046]" 0;
-	setAttr ".phl[1047]" 0;
-	setAttr ".phl[1048]" 0;
-	setAttr ".phl[1049]" 0;
-	setAttr ".phl[1050]" 0;
-	setAttr ".phl[1051]" 0;
-	setAttr ".phl[1052]" 0;
-	setAttr ".phl[1053]" 0;
-	setAttr ".phl[1054]" 0;
-	setAttr ".phl[1055]" 0;
-	setAttr ".phl[1056]" 0;
-	setAttr ".phl[1057]" 0;
-	setAttr ".phl[1058]" 0;
-	setAttr ".phl[1059]" 0;
-	setAttr ".phl[1060]" 0;
-	setAttr ".phl[1061]" 0;
-	setAttr ".phl[1062]" 0;
-	setAttr ".phl[1063]" 0;
-	setAttr ".phl[1064]" 0;
-	setAttr ".phl[1065]" 0;
-	setAttr ".phl[1066]" 0;
-	setAttr ".phl[1067]" 0;
-	setAttr ".phl[1068]" 0;
-	setAttr ".phl[1069]" 0;
-	setAttr ".phl[1070]" 0;
-	setAttr ".phl[1071]" 0;
-	setAttr ".phl[1072]" 0;
-	setAttr ".phl[1073]" 0;
-	setAttr ".phl[1074]" 0;
-	setAttr ".phl[1075]" 0;
-	setAttr ".phl[1076]" 0;
-	setAttr ".phl[1077]" 0;
-	setAttr ".phl[1078]" 0;
-	setAttr ".phl[1079]" 0;
-	setAttr ".phl[1080]" 0;
-	setAttr ".phl[1081]" 0;
-	setAttr ".phl[1082]" 0;
-	setAttr ".phl[1083]" 0;
-	setAttr ".phl[1084]" 0;
-	setAttr ".phl[1085]" 0;
-	setAttr ".phl[1086]" 0;
-	setAttr ".phl[1087]" 0;
-	setAttr ".phl[1088]" 0;
-	setAttr ".phl[1089]" 0;
-	setAttr ".phl[1090]" 0;
-	setAttr ".phl[1091]" 0;
-	setAttr ".phl[1092]" 0;
-	setAttr ".phl[1093]" 0;
-	setAttr ".phl[1094]" 0;
-	setAttr ".phl[1095]" 0;
-	setAttr ".phl[1096]" 0;
-	setAttr ".phl[1097]" 0;
-	setAttr ".phl[1098]" 0;
-	setAttr ".phl[1099]" 0;
-	setAttr ".phl[1100]" 0;
-	setAttr ".phl[1101]" 0;
-	setAttr ".phl[1102]" 0;
-	setAttr ".phl[1103]" 0;
-	setAttr ".phl[1104]" 0;
-	setAttr ".phl[1105]" 0;
-	setAttr ".phl[1106]" 0;
-	setAttr ".phl[1107]" 0;
-	setAttr ".phl[1108]" 0;
-	setAttr ".phl[1109]" 0;
-	setAttr ".phl[1110]" 0;
-	setAttr ".phl[1111]" 0;
-	setAttr ".phl[1112]" 0;
-	setAttr ".phl[1113]" 0;
-	setAttr ".phl[1114]" 0;
-	setAttr ".phl[1115]" 0;
-	setAttr ".phl[1116]" 0;
-	setAttr ".phl[1117]" 0;
-	setAttr ".phl[1118]" 0;
-	setAttr ".phl[1119]" 0;
-	setAttr ".phl[1120]" 0;
-	setAttr ".phl[1121]" 0;
-	setAttr ".phl[1122]" 0;
-	setAttr ".phl[1123]" 0;
-	setAttr ".phl[1124]" 0;
-	setAttr ".phl[1125]" 0;
-	setAttr ".phl[1126]" 0;
-	setAttr ".phl[1127]" 0;
-	setAttr ".phl[1128]" 0;
-	setAttr ".phl[1129]" 0;
-	setAttr ".phl[1130]" 0;
-	setAttr ".phl[1131]" 0;
-	setAttr ".phl[1132]" 0;
-	setAttr ".phl[1133]" 0;
-	setAttr ".phl[1134]" 0;
-	setAttr ".phl[1135]" 0;
-	setAttr ".phl[1136]" 0;
-	setAttr ".phl[1137]" 0;
-	setAttr ".phl[1138]" 0;
-	setAttr ".phl[1139]" 0;
-	setAttr ".phl[1140]" 0;
-	setAttr ".phl[1141]" 0;
-	setAttr ".phl[1142]" 0;
-	setAttr ".phl[1143]" 0;
-	setAttr ".phl[1144]" 0;
-	setAttr ".phl[1145]" 0;
-	setAttr ".phl[1146]" 0;
-	setAttr ".phl[1147]" 0;
-	setAttr ".phl[1148]" 0;
-	setAttr ".phl[1149]" 0;
-	setAttr ".phl[1150]" 0;
-	setAttr ".phl[1151]" 0;
-	setAttr ".phl[1152]" 0;
-	setAttr ".phl[1153]" 0;
-	setAttr ".phl[1154]" 0;
-	setAttr ".phl[1155]" 0;
-	setAttr ".phl[1156]" 0;
-	setAttr ".phl[1157]" 0;
-	setAttr ".phl[1158]" 0;
-	setAttr ".phl[1159]" 0;
-	setAttr ".phl[1160]" 0;
-	setAttr ".phl[1161]" 0;
-	setAttr ".phl[1162]" 0;
-	setAttr ".phl[1163]" 0;
-	setAttr ".phl[1164]" 0;
-	setAttr ".phl[1165]" 0;
-	setAttr ".phl[1166]" 0;
-	setAttr ".phl[1167]" 0;
-	setAttr ".phl[1168]" 0;
-	setAttr ".phl[1169]" 0;
-	setAttr ".phl[1170]" 0;
-	setAttr ".phl[1171]" 0;
-	setAttr ".phl[1172]" 0;
-	setAttr ".phl[1173]" 0;
-	setAttr ".phl[1174]" 0;
-	setAttr ".phl[1175]" 0;
-	setAttr ".phl[1176]" 0;
-	setAttr ".phl[1177]" 0;
-	setAttr ".phl[1178]" 0;
-	setAttr ".phl[1179]" 0;
-	setAttr ".phl[1180]" 0;
-	setAttr ".phl[1181]" 0;
-	setAttr ".phl[1182]" 0;
-	setAttr ".phl[1183]" 0;
-	setAttr ".phl[1184]" 0;
-	setAttr ".phl[1185]" 0;
-	setAttr ".phl[1186]" 0;
-	setAttr ".phl[1187]" 0;
-	setAttr ".phl[1188]" 0;
-	setAttr ".phl[1189]" 0;
-	setAttr ".phl[1190]" 0;
-	setAttr ".phl[1191]" 0;
-	setAttr ".phl[1192]" 0;
-	setAttr ".phl[1193]" 0;
-	setAttr ".phl[1194]" 0;
-	setAttr ".phl[1195]" 0;
-	setAttr ".phl[1196]" 0;
-	setAttr ".phl[1197]" 0;
-	setAttr ".phl[1198]" 0;
-	setAttr ".phl[1199]" 0;
-	setAttr ".phl[1200]" 0;
-	setAttr ".phl[1201]" 0;
-	setAttr ".phl[1202]" 0;
-	setAttr ".phl[1203]" 0;
-	setAttr ".phl[1204]" 0;
-	setAttr ".phl[1205]" 0;
-	setAttr ".phl[1206]" 0;
-	setAttr ".phl[1207]" 0;
-	setAttr ".phl[1208]" 0;
-	setAttr ".phl[1209]" 0;
-	setAttr ".phl[1210]" 0;
-	setAttr ".phl[1211]" 0;
-	setAttr ".phl[1212]" 0;
-	setAttr ".phl[1213]" 0;
-	setAttr ".phl[1214]" 0;
-	setAttr ".phl[1215]" 0;
-	setAttr ".phl[1216]" 0;
-	setAttr ".phl[1217]" 0;
-	setAttr ".phl[1218]" 0;
-	setAttr ".phl[1219]" 0;
-	setAttr ".phl[1220]" 0;
-	setAttr ".phl[1221]" 0;
-	setAttr ".phl[1222]" 0;
-	setAttr ".phl[1223]" 0;
-	setAttr ".phl[1224]" 0;
-	setAttr ".phl[1225]" 0;
-	setAttr ".phl[1226]" 0;
-	setAttr ".phl[1227]" 0;
-	setAttr ".phl[1228]" 0;
-	setAttr ".phl[1229]" 0;
-	setAttr ".phl[1230]" 0;
-	setAttr ".phl[1231]" 0;
-	setAttr ".phl[1232]" 0;
-	setAttr ".phl[1233]" 0;
-	setAttr ".phl[1234]" 0;
-	setAttr ".phl[1235]" 0;
-	setAttr ".phl[1236]" 0;
-	setAttr ".phl[1237]" 0;
-	setAttr ".phl[1238]" 0;
-	setAttr ".phl[1239]" 0;
-	setAttr ".phl[1240]" 0;
-	setAttr ".phl[1241]" 0;
-	setAttr ".phl[1242]" 0;
-	setAttr ".phl[1243]" 0;
-	setAttr ".phl[1244]" 0;
-	setAttr ".phl[1245]" 0;
-	setAttr ".phl[1246]" 0;
-	setAttr ".phl[1247]" 0;
-	setAttr ".phl[1248]" 0;
-	setAttr ".phl[1249]" 0;
-	setAttr ".phl[1250]" 0;
-	setAttr ".phl[1251]" 0;
-	setAttr ".phl[1252]" 0;
-	setAttr ".phl[1253]" 0;
-	setAttr ".phl[1254]" 0;
-	setAttr ".phl[1255]" 0;
-	setAttr ".phl[1256]" 0;
-	setAttr ".phl[1257]" 0;
-	setAttr ".phl[1258]" 0;
-	setAttr ".phl[1259]" 0;
-	setAttr ".phl[1260]" 0;
-	setAttr ".phl[1261]" 0;
-	setAttr ".phl[1262]" 0;
-	setAttr ".phl[1263]" 0;
-	setAttr ".phl[1264]" 0;
-	setAttr ".phl[1265]" 0;
-	setAttr ".phl[1266]" 0;
-	setAttr ".phl[1267]" 0;
-	setAttr ".phl[1268]" 0;
-	setAttr ".phl[1269]" 0;
-	setAttr ".phl[1270]" 0;
-	setAttr ".phl[1271]" 0;
-	setAttr ".phl[1272]" 0;
-	setAttr ".phl[1273]" 0;
-	setAttr ".phl[1274]" 0;
-	setAttr ".phl[1275]" 0;
-	setAttr ".phl[1276]" 0;
-	setAttr ".phl[1277]" 0;
-	setAttr ".phl[1278]" 0;
-	setAttr ".phl[1279]" 0;
-	setAttr ".phl[1280]" 0;
-	setAttr ".phl[1281]" 0;
-	setAttr ".phl[1282]" 0;
-	setAttr ".phl[1283]" 0;
-	setAttr ".phl[1284]" 0;
-	setAttr ".phl[1285]" 0;
-	setAttr ".phl[1286]" 0;
-	setAttr ".phl[1287]" 0;
-	setAttr ".phl[1288]" 0;
-	setAttr ".phl[1289]" 0;
-	setAttr ".phl[1290]" 0;
-	setAttr ".phl[1291]" 0;
-	setAttr ".phl[1292]" 0;
-	setAttr ".phl[1293]" 0;
-	setAttr ".phl[1294]" 0;
-	setAttr ".phl[1295]" 0;
-	setAttr ".phl[1296]" 0;
-	setAttr ".phl[1297]" 0;
-	setAttr ".phl[1298]" 0;
-	setAttr ".phl[1299]" 0;
-	setAttr ".phl[1300]" 0;
-	setAttr ".phl[1301]" 0;
-	setAttr ".phl[1302]" 0;
-	setAttr ".phl[1303]" 0;
-	setAttr ".phl[1304]" 0;
-	setAttr ".phl[1305]" 0;
-	setAttr ".phl[1306]" 0;
-	setAttr ".phl[1307]" 0;
-	setAttr ".phl[1308]" 0;
-	setAttr ".phl[1309]" 0;
-	setAttr ".phl[1310]" 0;
-	setAttr ".phl[1311]" 0;
-	setAttr ".phl[1312]" 0;
-	setAttr ".phl[1313]" 0;
-	setAttr ".phl[1314]" 0;
-	setAttr ".phl[1315]" 0;
-	setAttr ".phl[1316]" 0;
-	setAttr ".phl[1317]" 0;
-	setAttr ".phl[1318]" 0;
-	setAttr ".phl[1319]" 0;
-	setAttr ".phl[1320]" 0;
-	setAttr ".phl[1321]" 0;
-	setAttr ".phl[1322]" 0;
-	setAttr ".phl[1323]" 0;
-	setAttr ".phl[1324]" 0;
-	setAttr ".phl[1325]" 0;
-	setAttr ".phl[1326]" 0;
-	setAttr ".phl[1327]" 0;
-	setAttr ".phl[1328]" 0;
-	setAttr ".phl[1329]" 0;
-	setAttr ".phl[1330]" 0;
-	setAttr ".phl[1331]" 0;
-	setAttr ".phl[1332]" 0;
-	setAttr ".phl[1333]" 0;
-	setAttr ".phl[1334]" 0;
-	setAttr ".phl[1335]" 0;
-	setAttr ".phl[1336]" 0;
-	setAttr ".phl[1337]" 0;
-	setAttr ".phl[1338]" 0;
-	setAttr ".phl[1339]" 0;
-	setAttr ".phl[1340]" 0;
-	setAttr ".phl[1341]" 0;
-	setAttr ".phl[1342]" 0;
-	setAttr ".phl[1343]" 0;
-	setAttr ".phl[1344]" 0;
-	setAttr ".phl[1345]" 0;
-	setAttr ".phl[1346]" 0;
-	setAttr ".phl[1347]" 0;
-	setAttr ".phl[1348]" 0;
-	setAttr ".phl[1349]" 0;
-	setAttr ".phl[1350]" 0;
-	setAttr ".phl[1351]" 0;
-	setAttr ".phl[1352]" 0;
-	setAttr ".phl[1353]" 0;
-	setAttr ".phl[1354]" 0;
-	setAttr ".phl[1355]" 0;
-	setAttr ".phl[1356]" 0;
-	setAttr ".phl[1357]" 0;
-	setAttr ".phl[1358]" 0;
-	setAttr ".phl[1359]" 0;
-	setAttr ".phl[1360]" 0;
-	setAttr ".phl[1361]" 0;
-	setAttr ".phl[1362]" 0;
-	setAttr ".phl[1363]" 0;
-	setAttr ".phl[1364]" 0;
-	setAttr ".phl[1365]" 0;
-	setAttr ".phl[1366]" 0;
-	setAttr ".phl[1367]" 0;
-	setAttr ".phl[1368]" 0;
-	setAttr ".phl[1369]" 0;
-	setAttr ".phl[1370]" 0;
-	setAttr ".phl[1371]" 0;
-	setAttr ".phl[1372]" 0;
-	setAttr ".phl[1373]" 0;
-	setAttr ".phl[1374]" 0;
-	setAttr ".phl[1375]" 0;
-	setAttr ".phl[1376]" 0;
-	setAttr ".phl[1377]" 0;
-	setAttr ".phl[1378]" 0;
-	setAttr ".phl[1379]" 0;
-	setAttr ".phl[1380]" 0;
-	setAttr ".phl[1381]" 0;
-	setAttr ".phl[1382]" 0;
-	setAttr ".phl[1383]" 0;
-	setAttr ".phl[1384]" 0;
-	setAttr ".phl[1385]" 0;
-	setAttr ".phl[1386]" 0;
-	setAttr ".phl[1387]" 0;
-	setAttr ".phl[1388]" 0;
-	setAttr ".phl[1389]" 0;
-	setAttr ".phl[1390]" 0;
-	setAttr ".phl[1391]" 0;
-	setAttr ".phl[1392]" 0;
-	setAttr ".phl[1393]" 0;
-	setAttr ".phl[1394]" 0;
-	setAttr ".phl[1395]" 0;
-	setAttr ".phl[1396]" 0;
-	setAttr ".phl[1397]" 0;
-	setAttr ".phl[1398]" 0;
-	setAttr ".phl[1399]" 0;
-	setAttr ".phl[1400]" 0;
-	setAttr ".phl[1401]" 0;
-	setAttr ".phl[1402]" 0;
-	setAttr ".phl[1403]" 0;
-	setAttr ".phl[1404]" 0;
-	setAttr ".phl[1405]" 0;
-	setAttr ".phl[1406]" 0;
-	setAttr ".phl[1407]" 0;
-	setAttr ".phl[1408]" 0;
-	setAttr ".phl[1409]" 0;
-	setAttr ".phl[1410]" 0;
-	setAttr ".phl[1411]" 0;
-	setAttr ".phl[1412]" 0;
-	setAttr ".phl[1413]" 0;
-	setAttr ".phl[1414]" 0;
-	setAttr ".phl[1415]" 0;
-	setAttr ".phl[1416]" 0;
-	setAttr ".phl[1417]" 0;
-	setAttr ".phl[1418]" 0;
-	setAttr ".phl[1419]" 0;
-	setAttr ".phl[1420]" 0;
-	setAttr ".phl[1421]" 0;
-	setAttr ".phl[1422]" 0;
-	setAttr ".phl[1423]" 0;
-	setAttr ".phl[1424]" 0;
-	setAttr ".phl[1425]" 0;
-	setAttr ".phl[1426]" 0;
-	setAttr ".phl[1427]" 0;
-	setAttr ".phl[1428]" 0;
-	setAttr ".phl[1429]" 0;
-	setAttr ".phl[1430]" 0;
-	setAttr ".phl[1431]" 0;
-	setAttr ".phl[1432]" 0;
-	setAttr ".phl[1433]" 0;
-	setAttr ".phl[1434]" 0;
-	setAttr ".phl[1435]" 0;
-	setAttr ".phl[1436]" 0;
-	setAttr ".phl[1437]" 0;
-	setAttr ".phl[1438]" 0;
-	setAttr ".phl[1439]" 0;
-	setAttr ".phl[1440]" 0;
-	setAttr ".phl[1441]" 0;
-	setAttr ".phl[1442]" 0;
-	setAttr ".phl[1443]" 0;
-	setAttr ".phl[1444]" 0;
-	setAttr ".phl[1445]" 0;
-	setAttr ".phl[1446]" 0;
-	setAttr ".phl[1447]" 0;
-	setAttr ".phl[1448]" 0;
-	setAttr ".phl[1449]" 0;
-	setAttr ".phl[1450]" 0;
-	setAttr ".phl[1451]" 0;
-	setAttr ".phl[1452]" 0;
-	setAttr ".phl[1453]" 0;
-	setAttr ".phl[1454]" 0;
-	setAttr ".phl[1455]" 0;
-	setAttr ".phl[1456]" 0;
-	setAttr ".phl[1457]" 0;
-	setAttr ".phl[1458]" 0;
-	setAttr ".phl[1459]" 0;
-	setAttr ".phl[1460]" 0;
-	setAttr ".phl[1461]" 0;
-	setAttr ".phl[1462]" 0;
-	setAttr ".phl[1463]" 0;
-	setAttr ".phl[1464]" 0;
-	setAttr ".phl[1465]" 0;
-	setAttr ".phl[1466]" 0;
-	setAttr ".phl[1467]" 0;
-	setAttr ".phl[1468]" 0;
-	setAttr ".phl[1469]" 0;
-	setAttr ".phl[1470]" 0;
-	setAttr ".phl[1471]" 0;
-	setAttr ".phl[1472]" 0;
-	setAttr ".phl[1473]" 0;
-	setAttr ".phl[1474]" 0;
-	setAttr ".phl[1475]" 0;
-	setAttr ".phl[1476]" 0;
-	setAttr ".phl[1477]" 0;
-	setAttr ".phl[1478]" 0;
-	setAttr ".phl[1479]" 0;
-	setAttr ".phl[1480]" 0;
-	setAttr ".phl[1481]" 0;
-	setAttr ".phl[1482]" 0;
-	setAttr ".phl[1483]" 0;
-	setAttr ".phl[1484]" 0;
-	setAttr ".phl[1485]" 0;
-	setAttr ".phl[1486]" 0;
-	setAttr ".phl[1487]" 0;
-	setAttr ".phl[1488]" 0;
-	setAttr ".phl[1489]" 0;
-	setAttr ".phl[1490]" 0;
 	setAttr ".phl[1491]" 0;
 	setAttr ".phl[1492]" 0;
-	setAttr ".phl[1493]" 0;
-	setAttr ".phl[1494]" 0;
-	setAttr ".phl[1495]" 0;
 	setAttr ".phl[1496]" 0;
 	setAttr ".phl[1497]" 0;
-	setAttr ".phl[1498]" 0;
-	setAttr ".phl[1499]" 0;
-	setAttr ".phl[1500]" 0;
-	setAttr ".phl[1501]" 0;
-	setAttr ".phl[1502]" 0;
-	setAttr ".phl[1503]" 0;
-	setAttr ".phl[1504]" 0;
-	setAttr ".phl[1505]" 0;
-	setAttr ".phl[1506]" 0;
-	setAttr ".phl[1507]" 0;
-	setAttr ".phl[1508]" 0;
-	setAttr ".phl[1509]" 0;
-	setAttr ".phl[1510]" 0;
-	setAttr ".phl[1511]" 0;
-	setAttr ".phl[1512]" 0;
-	setAttr ".phl[1513]" 0;
-	setAttr ".phl[1514]" 0;
-	setAttr ".phl[1515]" 0;
-	setAttr ".phl[1516]" 0;
-	setAttr ".phl[1517]" 0;
-	setAttr ".phl[1518]" 0;
-	setAttr ".phl[1519]" 0;
-	setAttr ".phl[1520]" 0;
-	setAttr ".phl[1521]" 0;
-	setAttr ".phl[1522]" 0;
-	setAttr ".phl[1523]" 0;
-	setAttr ".phl[1524]" 0;
-	setAttr ".phl[1525]" 0;
-	setAttr ".phl[1526]" 0;
-	setAttr ".phl[1527]" 0;
-	setAttr ".phl[1528]" 0;
-	setAttr ".phl[1529]" 0;
-	setAttr ".phl[1530]" 0;
-	setAttr ".phl[1531]" 0;
-	setAttr ".phl[1532]" 0;
-	setAttr ".phl[1533]" 0;
-	setAttr ".phl[1534]" 0;
-	setAttr ".phl[1535]" 0;
-	setAttr ".phl[1536]" 0;
-	setAttr ".phl[1537]" 0;
-	setAttr ".phl[1538]" 0;
-	setAttr ".phl[1539]" 0;
-	setAttr ".phl[1540]" 0;
-	setAttr ".phl[1541]" 0;
-	setAttr ".phl[1542]" 0;
-	setAttr ".phl[1543]" 0;
-	setAttr ".phl[1544]" 0;
-	setAttr ".phl[1545]" 0;
-	setAttr ".phl[1546]" 0;
-	setAttr ".phl[1547]" 0;
-	setAttr ".phl[1548]" 0;
-	setAttr ".phl[1549]" 0;
-	setAttr ".phl[1550]" 0;
-	setAttr ".phl[1551]" 0;
-	setAttr ".phl[1552]" 0;
-	setAttr ".phl[1553]" 0;
-	setAttr ".phl[1554]" 0;
-	setAttr ".phl[1555]" 0;
-	setAttr ".phl[1556]" 0;
-	setAttr ".phl[1557]" 0;
-	setAttr ".phl[1558]" 0;
-	setAttr ".phl[1559]" 0;
-	setAttr ".phl[1560]" 0;
-	setAttr ".phl[1561]" 0;
-	setAttr ".phl[1562]" 0;
-	setAttr ".phl[1563]" 0;
-	setAttr ".phl[1564]" 0;
-	setAttr ".phl[1565]" 0;
-	setAttr ".phl[1566]" 0;
-	setAttr ".phl[1567]" 0;
-	setAttr ".phl[1568]" 0;
-	setAttr ".phl[1569]" 0;
-	setAttr ".phl[1570]" 0;
-	setAttr ".phl[1571]" 0;
 	setAttr ".phl[1572]" 0;
 	setAttr ".phl[1573]" 0;
 	setAttr ".phl[1574]" 0;
@@ -1882,385 +314,10 @@ createNode reference -n "DragonGateCaveSetRN";
 	setAttr ".phl[1589]" 0;
 	setAttr ".phl[1590]" 0;
 	setAttr ".phl[1591]" 0;
+	setAttr ".phl[1592]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"DragonGateCaveSetRN"
 		"DragonGateCaveSet:roundedRocksRN" 0
-		"DragonGateCaveSet:Dragon_RigRN" 0
-		"DragonGateCaveSet:Stalagmite_2RN" 0
-		"DragonGateCaveSet:BonesRN" 0
-		"DragonGateCaveSet:Stalagmite_1RN" 0
-		"DragonGateCaveSet:DragonGateRN" 0
-		"DragonGateCaveSet:Emergency_ButtonRN" 0
-		"DragonGateCaveSet:SkeletonRN" 0
-		"DragonGateCaveSet:DragonGateTorchRN" 0
-		"DragonGateCaveSet:Large_BoulderRN" 0
-		"DragonGateCaveSetRN" 0
-		"DragonGateCaveSet:roundedRocksRN" 183
-		0 "|DragonGateCaveSet:roundedRocks:Rocks" "|Environment" "-s -r "
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks" "translate" " -type \"double3\" 0 -0.041754856650145111 0.44866790325740918"
-		
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
-		"overrideColorA" " 1"
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:roundedRocks:Rocks.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1574]" ""
 		"DragonGateCaveSet:Dragon_RigRN" 5
 		2 "|DragonGateCaveSet:Dragon_Rig:Dragon" "visibility" " 0"
 		2 "|DragonGateCaveSet:Dragon_Rig:Dragon|DragonGateCaveSet:Dragon_Rig:Geometry|DragonGateCaveSet:Dragon_Rig:pCylinder2" 
@@ -2268,1879 +325,11 @@ createNode reference -n "DragonGateCaveSetRN";
 		2 "DragonGateCaveSet:Dragon_Rig:Jnt" "displayOrder" " 3"
 		2 "DragonGateCaveSet:Dragon_Rig:Ctrl" "visibility" " 1"
 		2 "DragonGateCaveSet:Dragon_Rig:Ctrl" "displayOrder" " 5"
-		"DragonGateCaveSet:BonesRN" 117
-		0 "|DragonGateCaveSet:Bones:Forearm_Bones" "|Environment" "-s -r "
-		0 "|DragonGateCaveSet:Bones:Femur_Bones" "|Environment" "-s -r "
-		0 "|DragonGateCaveSet:Bones:Ribs" "|Environment" "-s -r "
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones" "translate" " -type \"double3\" 0 -0.050194428039937719 0.0062627905638834849"
-		
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones" "translate" " -type \"double3\" 0 -0.050194428039937719 0"
-		
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs" "translate" " -type \"double3\" 0 -0.050194428039937719 0"
-		
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
-		"overrideColorA" " 1"
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Bones:Forearm_Bones.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1575]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Bones:Femur_Bones.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1576]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Bones:Ribs.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1577]" ""
-		"DragonGateCaveSet:Stalagmite_2RN" 60
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
-		"overrideColorA" " 1"
-		"DragonGateCaveSet:Stalagmite_1RN" 48
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
-		"overrideColorA" " 1"
-		"DragonGateCaveSet:DragonGateRN" 675
-		0 "|DragonGateCaveSet:DragonGate:DragonGate" "|Environment" "-s -r "
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate" "translate" " -type \"double3\" -0.21808587895336151 -0.04157685204758748 0.10571971277462602"
-		
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
-		"overrideColorA" " 1"
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:DragonGate:DragonGate.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1]" ""
-		"DragonGateCaveSet:Emergency_ButtonRN" 36
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
-		"overrideColorA" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideDisplayType" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideLevelOfDetail" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideShading" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideTexturing" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overridePlayback" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideEnabled" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideVisibility" " 1"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"hideOnPlayback" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideRGBColors" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideColor" " 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideColorRGB" " -type \"float3\" 0 0 0"
-		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
-		"overrideColorA" " 1"
+		"DragonGateCaveSet:BonesRN" 0
+		"DragonGateCaveSet:Stalagmite_2RN" 0
+		"DragonGateCaveSet:Stalagmite_1RN" 0
+		"DragonGateCaveSet:DragonGateRN" 0
+		"DragonGateCaveSet:Emergency_ButtonRN" 0
 		"DragonGateCaveSet:SkeletonRN" 1590
 		0 "|DragonGateCaveSetRNfosterParent1|Mid_Space_Ctrl_01_parentConstraint1" 
 		"|DragonGateCaveSet:Skeleton:Skeleton_Asset|DragonGateCaveSet:Skeleton:Controls|DragonGateCaveSet:Skeleton:Transform_Ctrl_Grp|DragonGateCaveSet:Skeleton:Transform_Ctrl|DragonGateCaveSet:Skeleton:COG_Ctrl_Grp|DragonGateCaveSet:Skeleton:COG_Ctrl|DragonGateCaveSet:Skeleton:Space_Controls|DragonGateCaveSet:Skeleton:Mid_Space_Ctrl_01_Grp|DragonGateCaveSet:Skeleton:Mid_Space_Ctrl_01" 
@@ -7317,11 +3506,2271 @@ createNode reference -n "DragonGateCaveSetRN";
 		"DragonGateCaveSetRN.placeHolderList[1570]" ""
 		5 4 "DragonGateCaveSetRN" "|DragonGateCaveSet:Skeleton:Skeleton_Asset|DragonGateCaveSet:Skeleton:Controls|DragonGateCaveSet:Skeleton:Transform_Ctrl_Grp|DragonGateCaveSet:Skeleton:Transform_Ctrl|DragonGateCaveSet:Skeleton:COG_Ctrl_Grp|DragonGateCaveSet:Skeleton:COG_Ctrl|DragonGateCaveSet:Skeleton:Redundancy_Controls|DragonGateCaveSet:Skeleton:Neck_02_Redundancy_Ctrl_Grp|DragonGateCaveSet:Skeleton:Neck_02_Redundancy_Ctrl.visibility" 
 		"DragonGateCaveSetRN.placeHolderList[1571]" ""
+		"DragonGateCaveSet:DragonGateTorchRN" 0
+		"DragonGateCaveSet:Large_BoulderRN" 0
+		"DragonGateCaveSetRN" 0
+		"DragonGateCaveSet:roundedRocksRN" 183
+		0 "|DragonGateCaveSet:roundedRocks:Rocks" "|Environment" "-s -r "
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks" "translate" " -type \"double3\" 0 -0.00041754856650145112 0.0044866790325740922"
+		
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock6" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock3" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock4" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock10" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock13" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock9" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock15" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock5" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock8" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock11" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock14" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock2" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock12" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:roundedRocks:Rocks|DragonGateCaveSet:roundedRocks:rock7" 
+		"overrideColorA" " 1"
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:roundedRocks:Rocks.drawOverride" 
+		"DragonGateCaveSetRN.placeHolderList[1575]" ""
+		"DragonGateCaveSet:BonesRN" 117
+		0 "|DragonGateCaveSet:Bones:Forearm_Bones" "|Environment" "-s -r "
+		0 "|DragonGateCaveSet:Bones:Femur_Bones" "|Environment" "-s -r "
+		0 "|DragonGateCaveSet:Bones:Ribs" "|Environment" "-s -r "
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones" "translate" " -type \"double3\" 0 -0.00050194428039937716 6.2627905638834848e-05"
+		
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Forearm_Bones|DragonGateCaveSet:Bones:Forearm_bones2" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones" "translate" " -type \"double3\" 0 -0.00050194428039937716 0"
+		
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Femur_Bones|DragonGateCaveSet:Bones:Femur2" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs" "translate" " -type \"double3\" 0 -0.00050194428039937716 0"
+		
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Bones:Ribs|DragonGateCaveSet:Bones:Broken_ribs2" 
+		"overrideColorA" " 1"
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Bones:Forearm_Bones.drawOverride" 
+		"DragonGateCaveSetRN.placeHolderList[1576]" ""
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Bones:Femur_Bones.drawOverride" 
+		"DragonGateCaveSetRN.placeHolderList[1577]" ""
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Bones:Ribs.drawOverride" 
+		"DragonGateCaveSetRN.placeHolderList[1578]" ""
+		"DragonGateCaveSet:Stalagmite_2RN" 68
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube2" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"translate" " -type \"double3\" -0.059906495170206221 0.10637920445397449 0.0034621740668891524"
+		
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube3" 
+		"translateY" " -av"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"translate" " -type \"double3\" -0.0024747098652441934 -0.00584415260432662 0.0024089645667960458"
+		
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"translateY" " -av"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"translateZ" " -av"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"scale" " -type \"double3\" 1 1.05770059949990314 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"scaleX" " -av"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube4" 
+		"scaleY" " -av"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_02_01|DragonGateCaveSet:Stalagmite_2:pCube5" 
+		"overrideColorA" " 1"
+		"DragonGateCaveSet:Stalagmite_1RN" 48
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube2" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube3" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Stalagmite_01_01|DragonGateCaveSet:Stalagmite_1:pCube4" 
+		"overrideColorA" " 1"
+		"DragonGateCaveSet:DragonGateRN" 675
+		0 "|DragonGateCaveSet:DragonGate:DragonGate" "|Environment" "-s -r "
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate" "translate" " -type \"double3\" -0.0021808587895336151 -0.00041576852047587481 0.0010571971277462604"
+		
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Arch|DragonGateCaveSet:DragonGate:ARCH2" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_01" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_02" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_03" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_04" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_05" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_06" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Vertical|DragonGateCaveSet:DragonGate:Gate_V_07" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_01" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_02" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_03" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_04" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_05" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_06" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_07" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_08" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:Gate|DragonGateCaveSet:DragonGate:Horizontal|DragonGateCaveSet:DragonGate:Gate_H_09" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount01" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:SkullMount|DragonGateCaveSet:DragonGate:SkullMount02" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_01" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_02" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_03" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_04" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_05" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_06" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_07" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_08" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth|DragonGateCaveSet:DragonGate:L_Upper_Teeth_09" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_01" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_02" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_03" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_04" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_05" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_06" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_07" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_08" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:TopJaw|DragonGateCaveSet:DragonGate:Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth|DragonGateCaveSet:DragonGate:R_Upper_Teeth_09" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_01" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_02" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_03" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_04" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_05" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_06" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_07" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth|DragonGateCaveSet:DragonGate:L_Lower_Teeth_08" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_01" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_02" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_03" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_04" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_05" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_06" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_07" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:DragonGate:DragonGate|DragonGateCaveSet:DragonGate:DragonSkull|DragonGateCaveSet:DragonGate:BottomJaw|DragonGateCaveSet:DragonGate:Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth|DragonGateCaveSet:DragonGate:R_Lower_Teeth_08" 
+		"overrideColorA" " 1"
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:DragonGate:DragonGate.drawOverride" 
+		"DragonGateCaveSetRN.placeHolderList[1572]" ""
+		"DragonGateCaveSet:Emergency_ButtonRN" 36
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:box1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:polySurface1" 
+		"overrideColorA" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideDisplayType" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideLevelOfDetail" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideShading" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideTexturing" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overridePlayback" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideEnabled" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideVisibility" " 1"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"hideOnPlayback" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideRGBColors" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideColor" " 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideColorRGB" " -type \"float3\" 0 0 0"
+		2 "|Environment|DragonGateCaveSet:Emergency_Button1|DragonGateCaveSet:Emergency_Button:button1" 
+		"overrideColorA" " 1"
 		"DragonGateCaveSet:DragonGateTorchRN" 1119
 		0 "|DragonGateCaveSet:DragonGateTorch:DragonGateTorch" "|Environment" "-s -r "
 		
 		2 "|Environment|DragonGateCaveSet:DragonGateTorch:DragonGateTorch" "translate" 
-		" -type \"double3\" -0.21584438463691802 -0.01046471602427115 0.025786134642456597"
+		" -type \"double3\" -0.0021584438463691804 -0.0001046471602427115 0.00025786134642456597"
 		
 		2 "|Environment|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:WallBase|DragonGateCaveSet:DragonGateTorch:TorchBase" 
 		"overrideDisplayType" " 0"
@@ -9556,15 +8005,15 @@ createNode reference -n "DragonGateCaveSetRN";
 		2 "|Environment|DragonGateCaveSet:DragonGateTorch:DragonGateTorch|DragonGateCaveSet:DragonGateTorch:TorchHolder|DragonGateCaveSet:DragonGateTorch:Loop06" 
 		"overrideColorA" " 1"
 		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:DragonGateTorch:DragonGateTorch.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1572]" ""
+		"DragonGateCaveSetRN.placeHolderList[1573]" ""
 		"DragonGateCaveSet:Large_BoulderRN" 3
 		0 "|DragonGateCaveSet:Large_Boulder:polySurface3" "|Environment" "-s -r "
 		
 		2 "|Environment|DragonGateCaveSet:Large_Boulder:polySurface3" "translate" 
-		" -type \"double3\" -0.014529100101211419 -0.039648206826755732 0.32600411203925361"
+		" -type \"double3\" -0.0001452910010121142 -0.00039648206826755733 0.0032600411203925362"
 		
 		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Large_Boulder:polySurface3.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1573]" ""
+		"DragonGateCaveSetRN.placeHolderList[1574]" ""
 		"DragonGateCaveSetRN" 1650
 		0 "|DragonGateCaveSet:Stalagmite_01_01" "|Environment" "-s -r "
 		0 "|DragonGateCaveSet:CaveWall_03" "|Environment" "-s -r "
@@ -12825,33 +11274,33 @@ createNode reference -n "DragonGateCaveSetRN";
 		2 "|Environment|DragonGateCaveSet:Stalagmite_01_07|DragonGateCaveSet:pCube4" 
 		"overrideColorA" " 1"
 		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_01.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1578]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:CaveWall_03.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1579]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_01.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:CaveWall_03.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1580]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_02.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_01.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1581]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Emergency_Button1.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_02.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1582]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:DragonGateTorch1.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Emergency_Button1.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1583]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_02.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:DragonGateTorch1.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1584]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_03.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_02.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1585]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_04.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_03.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1586]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_03.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_02_04.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1587]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_04.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_03.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1588]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_05.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_04.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1589]" ""
-		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_06.drawOverride" 
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_05.drawOverride" 
 		"DragonGateCaveSetRN.placeHolderList[1590]" ""
+		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_06.drawOverride" 
+		"DragonGateCaveSetRN.placeHolderList[1591]" ""
 		5 4 "DragonGateCaveSetRN" "|Environment|DragonGateCaveSet:Stalagmite_01_07.drawOverride" 
-		"DragonGateCaveSetRN.placeHolderList[1591]" "";
+		"DragonGateCaveSetRN.placeHolderList[1592]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode ikSpringSolver -s -n "ikSpringSolver";
@@ -12868,111 +11317,186 @@ createNode animCurveTU -n "camera1_visibility";
 	rename -uid "072DDD85-471F-A88B-C035-D6B11716D2ED";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
-	setAttr ".kot[0]"  5;
+	setAttr -s 7 ".ktv[0:6]"  0 1 29 1 31 1 33 1 35 1 52 1 57 1;
+	setAttr -s 7 ".kit[1:6]"  16 9 9 9 16 16;
+	setAttr -s 7 ".kot[0:6]"  5 16 9 9 5 16 5;
 createNode animCurveTL -n "camera1_translateX";
 	rename -uid "5BB96E75-4EBC-F8DE-5213-579CCCB1C8F4";
-	setAttr ".tan" 10;
+	setAttr ".tan" 16;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 8;
+	setAttr -s 7 ".ktv[0:6]"  0 8 29 8 31 8 33 8 35 8 52 8 57 8;
+	setAttr -s 7 ".kit[0:6]"  10 16 9 9 10 16 16;
+	setAttr -s 7 ".kot[0:6]"  10 16 9 9 5 16 5;
 createNode animCurveTL -n "camera1_translateY";
 	rename -uid "B68184D4-4EA9-5F0C-AF8C-3A8FC3CEC21A";
-	setAttr ".tan" 10;
+	setAttr ".tan" 16;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 0.99951417401883813;
+	setAttr -s 7 ".ktv[0:6]"  0 0.99951417401883813 29 0.99951417401883813
+		 31 0.99951417401883813 33 0.99951417401883813 35 0.99951417401883813 52 0.99951417401883813
+		 57 0.99951417401883813;
+	setAttr -s 7 ".kit[0:6]"  10 16 9 9 10 16 16;
+	setAttr -s 7 ".kot[0:6]"  10 16 9 9 5 16 5;
 createNode animCurveTL -n "camera1_translateZ";
 	rename -uid "80C13589-4CE3-2F0C-9A96-92A35AD0CBD3";
-	setAttr ".tan" 10;
+	setAttr ".tan" 16;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 11;
+	setAttr -s 7 ".ktv[0:6]"  0 11 29 11 31 10.629629629629628 33 10.5
+		 35 10.52 52 10.52 57 11;
+	setAttr -s 7 ".kit[0:6]"  10 16 9 9 10 16 16;
+	setAttr -s 7 ".kot[0:6]"  10 16 9 9 5 16 5;
 createNode animCurveTU -n "camera1_scaleX";
 	rename -uid "60826A28-41B3-1682-D37A-DEAA538A339B";
-	setAttr ".tan" 10;
+	setAttr ".tan" 16;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 7 ".ktv[0:6]"  0 1 29 1 31 1 33 1 35 1 52 1 57 1;
+	setAttr -s 7 ".kit[0:6]"  10 16 9 9 10 16 16;
+	setAttr -s 7 ".kot[0:6]"  10 16 9 9 5 16 5;
 createNode animCurveTU -n "camera1_scaleY";
 	rename -uid "38EC8728-49EA-6CC2-FBA2-A090F5B54611";
-	setAttr ".tan" 10;
+	setAttr ".tan" 16;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 7 ".ktv[0:6]"  0 1 29 1 31 1 33 1 35 1 52 1 57 1;
+	setAttr -s 7 ".kit[0:6]"  10 16 9 9 10 16 16;
+	setAttr -s 7 ".kot[0:6]"  10 16 9 9 5 16 5;
 createNode animCurveTU -n "camera1_scaleZ";
 	rename -uid "34593FD1-42BC-6AF6-E2D0-87842B324A48";
-	setAttr ".tan" 10;
+	setAttr ".tan" 16;
 	setAttr ".wgt" no;
-	setAttr ".ktv[0]"  0 1;
+	setAttr -s 7 ".ktv[0:6]"  0 1 29 1 31 1 33 1 35 1 52 1 57 1;
+	setAttr -s 7 ".kit[0:6]"  10 16 9 9 10 16 16;
+	setAttr -s 7 ".kot[0:6]"  10 16 9 9 5 16 5;
 createNode animCurveTU -n "camera1_aim_visibility";
 	rename -uid "B5F51C7D-490B-E2FA-91DF-F9A87A3FD7EB";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 0 46 0 49 0 52 0;
-	setAttr -s 4 ".kit[0:3]"  9 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 0 11 0 17 0 22 0 26 0 29 0 36 0 42 0 45 0
+		 49 0 52 0 56 0 60 0;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
 createNode animCurveTL -n "camera1_aim_translateX";
 	rename -uid "C40A28A7-4DE2-C284-1514-A6A53C360ACB";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 6.7757049770771829 46 6.7757049770771829
-		 49 7.2428467925103313 52 7.9707189113983965;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 7 11 6.792319423219614 17 6.7757049770771829
+		 22 6.7 26 6.7 29 6.8 36 6.6000000000000005 42 6.7757049770771829 45 6.7815584514104295
+		 49 7.2428467925103313 52 7.8490741174426288 56 8 60 7.9707189113983965;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 16;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 5;
 createNode animCurveTL -n "camera1_aim_translateY";
 	rename -uid "A74930BD-4275-F188-52AC-01B02F7A16B9";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 1.0946346201887658 46 1.0946346201887658
-		 49 1.755667027300295 52 1.8253945535929958;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 1.05 11 1.091328352026635 17 1.0946346201887658
+		 22 1.09 26 1.1 29 1.1 36 1 42 1.0946346201887658 45 1.112489418123499 49 1.9251616897853046
+		 52 1.8542332942887962 56 1.8253945535929958 60 1.8253945535929958;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 16;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 5;
 createNode animCurveTL -n "camera1_aim_translateZ";
 	rename -uid "F15112A9-4DD8-2C3E-E5F6-A984622A56DA";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 17 46 17 49 17 52 17;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 17 11 17 17 17 22 17.1 26 16.9 29 16.9
+		 36 17 42 17 45 17 49 17 52 17 56 17 60 17;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 16;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 5;
 createNode animCurveTA -n "camera1_aim_rotateX";
 	rename -uid "FA492757-47AF-3995-EF4A-4E91A16A1585";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 0 46 0 49 0 52 0;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 0 11 0 17 0 22 0 26 0 29 0 36 0 42 0 45 0
+		 49 0 52 0 56 0 60 0;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
 createNode animCurveTA -n "camera1_aim_rotateY";
 	rename -uid "D5784653-4A96-B0C7-57F3-DFAA1B358E64";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 156.35553877766503 46 156.35553877766503
-		 49 156.35553877766503 52 156.35553877766503;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 156.35553877766503 11 156.35553877766503
+		 17 156.35553877766503 22 156.35553877766503 26 156.35553877766503 29 156.35553877766503
+		 36 156.35553877766503 42 156.35553877766503 45 156.35553877766503 49 156.35553877766503
+		 52 156.35553877766503 56 156.35553877766503 60 156.35553877766503;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
 createNode animCurveTA -n "camera1_aim_rotateZ";
 	rename -uid "9A3FE002-42BF-1B5C-2F9E-F98A1230C1B1";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 0 46 0 49 0 52 0;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 0 11 0 17 0 22 0 26 0 29 0 36 0 42 0 45 0
+		 49 0 52 0 56 0 60 0;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
 createNode animCurveTU -n "camera1_aim_scaleX";
 	rename -uid "09D8C625-46E3-743E-F02A-7B87EE9DBC74";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 1 46 1 49 1 52 1;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 1 11 1 17 1 22 1 26 1 29 1 36 1 42 1 45 1
+		 49 1 52 1 56 1 60 1;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
 createNode animCurveTU -n "camera1_aim_scaleY";
 	rename -uid "9D222564-4A7B-45C4-32D7-FDA649E5D476";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 1 46 1 49 1 52 1;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 1 11 1 17 1 22 1 26 1 29 1 36 1 42 1 45 1
+		 49 1 52 1 56 1 60 1;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
 createNode animCurveTU -n "camera1_aim_scaleZ";
 	rename -uid "07E03B60-46CF-C2A0-469B-FDA2871D18C7";
-	setAttr ".tan" 16;
+	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 4 ".ktv[0:3]"  0 1 46 1 49 1 52 1;
-	setAttr -s 4 ".kit[0:3]"  10 16 9 16;
-	setAttr -s 4 ".kot[0:3]"  5 16 9 16;
+	setAttr -s 13 ".ktv[0:12]"  0 1 11 1 17 1 22 1 26 1 29 1 36 1 42 1 45 1
+		 49 1 52 1 56 1 60 1;
+	setAttr -s 13 ".kit[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kot[0:12]"  16 9 9 9 9 9 9 16 
+		16 9 9 9 1;
+	setAttr -s 13 ".kix[12]"  1;
+	setAttr -s 13 ".kiy[12]"  0;
+	setAttr -s 13 ".kox[12]"  1;
+	setAttr -s 13 ".koy[12]"  0;
 createNode reference -n "ChestPropRN";
 	rename -uid "15F5D973-4708-6A29-1B46-F9B3566461FC";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -13352,17 +11876,11 @@ createNode reference -n "Mimic_RigRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Mimic_RigRN"
 		"Mimic_RigRN" 0
-		"Mimic_RigRN" 335
+		"Mimic_RigRN" 332
 		2 "|Mimic_Rig:ChestAndMimic" "translate" " -type \"double3\" 0 0 0"
 		2 "|Mimic_Rig:ChestAndMimic" "rotate" " -type \"double3\" 0 0 0"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Mimic_Top_Ctrl_Grp|Mimic_Rig:Mimic_Top_Ctrl_Offset_Grp|Mimic_Rig:Mimic_Top_Ctrl" 
-		"Close_Lid" " -k 1"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Tongue_Stuff_Ctrl_Grp|Mimic_Rig:Tongue_Stuff_Ctrl" 
-		"Sq_Envelope" " -k 1"
-		2 "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Mimic_Transform_Ctrl_Grp|Mimic_Rig:Mimic_Transform_Ctrl|Mimic_Rig:Mimic_COG_Ctrl_Grp|Mimic_Rig:Mimic_COG_Ctrl|Mimic_Rig:Mimic_Body_Controls|Mimic_Rig:Tongue_Controls|Mimic_Rig:Tongue_Stuff_Ctrl_Grp|Mimic_Rig:Tongue_Stuff_Ctrl" 
-		"Sq_Factor" " -k 1"
 		2 "Mimic_Rig:Geo_Lyr" "visibility" " 1"
-		2 "Mimic_Rig:Ctrl_Lyr" "visibility" " 0"
+		2 "Mimic_Rig:Ctrl_Lyr" "visibility" " 1"
 		5 4 "Mimic_RigRN" "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Chest_Transform_Ctrl_Grp|Mimic_Rig:Chest_Transform_Ctrl.rotateY" 
 		"Mimic_RigRN.placeHolderList[1]" ""
 		5 4 "Mimic_RigRN" "|Mimic_Rig:ChestAndMimic|Mimic_Rig:Controls|Mimic_Rig:Chest_Transform_Ctrl_Grp|Mimic_Rig:Chest_Transform_Ctrl.rotateX" 
@@ -17621,13 +16139,13 @@ createNode animCurveTA -n "L_Leg_IK_End_Ctrl_rotateX";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 7 ".ktv[0:6]"  0 0 9 0 22 0 33 0 42 0 48 98.328190538231965
-		 51 109.2852236739313;
+		 51 109.28522367393131;
 	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
 createNode animCurveTA -n "L_Leg_IK_End_Ctrl_rotateY";
 	rename -uid "4FC61533-45E9-FEB0-A151-318C073264A8";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  0 25.115403997472583 9 25.115403997472583
+	setAttr -s 7 ".ktv[0:6]"  0 25.115403997472587 9 25.115403997472587
 		 22 -7.0125298620125935 33 -7.0125298620125935 42 -69.31589132370928 48 -12.36889253755885
 		 51 64.635287263190548;
 	setAttr -s 7 ".kot[0:6]"  5 5 5 5 5 5 5;
@@ -18601,7 +17119,7 @@ createNode animCurveTA -n "R_Scap_Ctrl_rotateZ";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 4 ".ktv[0:3]"  0 0 6 18.073978463066105 31 -17.863980157529348
-		 42 -9.8080573317772171;
+		 42 -9.8080573317772188;
 	setAttr -s 4 ".kot[0:3]"  5 5 5 5;
 createNode animCurveTU -n "R_Scap_Ctrl_scaleX";
 	rename -uid "A25163B3-4183-E8AB-7F3C-A4B7C93A8BD2";
@@ -20305,7 +18823,7 @@ createNode animCurveTA -n "Spine_03_Ctrl_rotateZ";
 	rename -uid "AEFF3143-4528-81D9-0D66-6898A420D13C";
 	setAttr ".tan" 5;
 	setAttr ".wgt" no;
-	setAttr -s 7 ".ktv[0:6]"  0 0 6 -27.836051617225142 10 0 14 -27.836051617225142
+	setAttr -s 7 ".ktv[0:6]"  0 0 6 -27.836051617225145 10 0 14 -27.836051617225145
 		 18 0 31 -33.03082957924358 35 0;
 	setAttr -s 7 ".kit[0:6]"  10 10 1 1 1 10 10;
 	setAttr -s 7 ".kix[2:6]"  0 1 0 1 0.50055490201837594;
@@ -20645,7 +19163,7 @@ createNode animCurveTA -n "COG_Ctrl_rotateY";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 10 ".ktv[0:9]"  0 0 6 0 14 0 22 -31.829778470189844 31 -31.829778470189844
-		 42 -93.853888209775874 48 -174.20929223818098 51 -193.38289136948057 53 -193.38289136948057
+		 42 -93.853888209775889 48 -174.20929223818098 51 -193.38289136948057 53 -193.38289136948057
 		 56 -140.95269858337167;
 	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
 		5 5;
@@ -21610,7 +20128,7 @@ createNode animCurveTA -n "Head_Ctrl_rotateX";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  0 0 6 0 10 0 14 0 18 0 22 -3.5264855290579611
 		 24 15.603807849078775 31 13.887913916037798 35 13.912106016500724 42 0.52506636913797378
-		 51 2.7262853220967647 56 41.818551555311373;
+		 51 2.7262853220967647 56 41.81855155531138;
 	setAttr -s 12 ".kit[0:11]"  10 10 1 1 1 10 10 10 
 		10 10 10 10;
 	setAttr -s 12 ".kix[2:11]"  0 1 0 0.8781829629933332 1 1 1 1 1 0.5211880817621285;
@@ -25332,7 +23850,7 @@ createNode animCurveTA -n "L_Arm_IK_End_Ctrl_rotateZ";
 	setAttr ".tan" 10;
 	setAttr ".wgt" no;
 	setAttr -s 8 ".ktv[0:7]"  0 -324.6163580014275 22 -439.20217725583666
-		 31 -337.53598285580836 35 -351.487864832247 42 -351.487864832247 48 -436.82211687605314
+		 31 -337.53598285580836 35 -351.487864832247 42 -351.487864832247 48 -436.8221168760532
 		 51 -284.96945649059614 56 -284.96945649059614;
 	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
 createNode animCurveTU -n "L_Arm_IK_End_Ctrl_visibility";
@@ -25355,7 +23873,7 @@ createNode animCurveTL -n "L_Arm_IK_End_Ctrl_translateY";
 	setAttr ".wgt" no;
 	setAttr -s 8 ".ktv[0:7]"  0 -0.087703831550343309 22 -0.53145386910256476
 		 31 -0.17504717202414002 35 -0.36011182845643702 42 -0.36011182845643702 48 -0.35469900062521814
-		 51 0.20968093729530812 56 -0.40906902128210321;
+		 51 0.20968093729530815 56 -0.40906902128210321;
 	setAttr -s 8 ".kot[0:7]"  5 5 5 5 5 5 5 5;
 createNode animCurveTL -n "L_Arm_IK_End_Ctrl_translateZ";
 	rename -uid "DE7C56CD-4B86-AC30-7E3B-FB94DF7906A0";
@@ -25659,11 +24177,93 @@ createNode animCurveTU -n "R_Arm_IK_Base_Ctrl_Operating_Space";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  31 6;
 	setAttr ".kot[0]"  5;
+createNode reference -n "SkeletonRN";
+	rename -uid "49B5F3EE-4D93-E3D6-F28F-DBA2FC81FE2F";
+	setAttr -s 8 ".phl";
+	setAttr ".phl[1]" 0;
+	setAttr ".phl[2]" 0;
+	setAttr ".phl[3]" 0;
+	setAttr ".phl[4]" 0;
+	setAttr ".phl[5]" 0;
+	setAttr ".phl[6]" 0;
+	setAttr ".phl[7]" 0;
+	setAttr ".phl[8]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"SkeletonRN"
+		"SkeletonRN" 0
+		"SkeletonRN" 8
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.Master_Scale" 
+		"SkeletonRN.placeHolderList[1]" ""
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.Body_Poly" 
+		"SkeletonRN.placeHolderList[2]" ""
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.translateX" 
+		"SkeletonRN.placeHolderList[3]" ""
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.translateZ" 
+		"SkeletonRN.placeHolderList[4]" ""
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.translateY" 
+		"SkeletonRN.placeHolderList[5]" ""
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.rotateX" 
+		"SkeletonRN.placeHolderList[6]" ""
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.rotateY" 
+		"SkeletonRN.placeHolderList[7]" ""
+		5 4 "SkeletonRN" "|Skeleton:Skeleton_Asset|Skeleton:Controls|Skeleton:Transform_Ctrl_Grp|Skeleton:Transform_Ctrl.rotateZ" 
+		"SkeletonRN.placeHolderList[8]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode animCurveTL -n "Transform_Ctrl_translateX1";
+	rename -uid "978B3096-4677-5F37-405D-669522D126F7";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 5.5969583914738932;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "Transform_Ctrl_translateY1";
+	rename -uid "23B1D1B3-4B3C-FC6C-551F-728A5658EC2B";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 0;
+	setAttr ".kot[0]"  5;
+createNode animCurveTL -n "Transform_Ctrl_translateZ1";
+	rename -uid "9CF8EC69-4BD8-45F1-AD2D-28AC9EE9EBE2";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 16.292031720095945;
+	setAttr ".kot[0]"  5;
+createNode animCurveTA -n "Transform_Ctrl_rotateX1";
+	rename -uid "33FDFA1A-40FD-6F15-D756-D9BDA422587F";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 0;
+	setAttr ".kot[0]"  5;
+createNode animCurveTA -n "Transform_Ctrl_rotateY1";
+	rename -uid "58C9F762-4BAF-ADBD-4B4E-DEAD8B82E208";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 -104.99999999999999;
+	setAttr ".kot[0]"  5;
+createNode animCurveTA -n "Transform_Ctrl_rotateZ1";
+	rename -uid "B237CA2F-4874-991D-3138-32AE9097A52E";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 0;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "Transform_Ctrl_Master_Scale1";
+	rename -uid "1948E1FA-4A44-EEC4-E527-22B8A2BC658D";
+	setAttr ".tan" 10;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 1;
+	setAttr ".kot[0]"  5;
+createNode animCurveTU -n "Transform_Ctrl_Body_Poly1";
+	rename -uid "172BFFB7-40D0-3F23-D2FE-37B1474C26F6";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr ".ktv[0]"  0 1;
+	setAttr ".kot[0]"  5;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "D597FD0B-43CD-1F84-787D-ACB036364138";
+	rename -uid "3E47DDB8-4162-E8C1-3564-72922C94B526";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
-	setAttr ".o" 0;
+	setAttr ".o" 30;
+	setAttr ".unw" 30;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -25672,25 +24272,25 @@ select -ne :hardwareRenderingGlobals;
 	setAttr ".fprt" yes;
 	setAttr ".rtfm" 1;
 select -ne :renderPartition;
-	setAttr -s 220 ".st";
+	setAttr -s 144 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 81 ".s";
+	setAttr -s 54 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 92 ".u";
+	setAttr -s 5 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 15 ".r";
+	setAttr -s 14 ".r";
 select -ne :defaultTextureList1;
-	setAttr -s 18 ".tx";
+	setAttr -s 6 ".tx";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.40000001 0.40000001 0.40000001 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 195 ".dsm";
+	setAttr -s 196 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 229 ".gn";
+	setAttr -s 234 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -25712,12 +24312,425 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
-	setAttr -s 7 ".sol";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1574]";
+	setAttr -s 5 ".sol";
 connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1575]";
 connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1576]";
 connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1577]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1578]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1572]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1573]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1574]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1579]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1580]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1581]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1582]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1583]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1584]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1585]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1586]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1587]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1588]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1589]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1590]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1591]";
+connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1592]";
+connectAttr "Chest_Transform_Ctrl_rotateY.o" "Mimic_RigRN.phl[1]";
+connectAttr "Chest_Transform_Ctrl_rotateX.o" "Mimic_RigRN.phl[2]";
+connectAttr "Chest_Transform_Ctrl_rotateZ.o" "Mimic_RigRN.phl[3]";
+connectAttr "Chest_Transform_Ctrl_translateX.o" "Mimic_RigRN.phl[4]";
+connectAttr "Chest_Transform_Ctrl_translateZ.o" "Mimic_RigRN.phl[5]";
+connectAttr "Chest_Transform_Ctrl_translateY.o" "Mimic_RigRN.phl[6]";
+connectAttr "Chest_Transform_Ctrl_visibility.o" "Mimic_RigRN.phl[7]";
+connectAttr "Chest_Transform_Ctrl_scaleX.o" "Mimic_RigRN.phl[8]";
+connectAttr "Chest_Transform_Ctrl_scaleY.o" "Mimic_RigRN.phl[9]";
+connectAttr "Chest_Transform_Ctrl_scaleZ.o" "Mimic_RigRN.phl[10]";
+connectAttr "Chest_COG_Ctrl_translateX.o" "Mimic_RigRN.phl[11]";
+connectAttr "Chest_COG_Ctrl_translateY.o" "Mimic_RigRN.phl[12]";
+connectAttr "Chest_COG_Ctrl_translateZ.o" "Mimic_RigRN.phl[13]";
+connectAttr "Chest_COG_Ctrl_rotateX.o" "Mimic_RigRN.phl[14]";
+connectAttr "Chest_COG_Ctrl_rotateY.o" "Mimic_RigRN.phl[15]";
+connectAttr "Chest_COG_Ctrl_rotateZ.o" "Mimic_RigRN.phl[16]";
+connectAttr "Chest_COG_Ctrl_scaleX.o" "Mimic_RigRN.phl[17]";
+connectAttr "Chest_COG_Ctrl_scaleY.o" "Mimic_RigRN.phl[18]";
+connectAttr "Chest_COG_Ctrl_scaleZ.o" "Mimic_RigRN.phl[19]";
+connectAttr "Chest_COG_Ctrl_visibility.o" "Mimic_RigRN.phl[20]";
+connectAttr "Mimic_RigRN.phl[21]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tt"
+		;
+connectAttr "Mimic_Transform_Ctrl_translateX.o" "Mimic_RigRN.phl[22]";
+connectAttr "Mimic_Transform_Ctrl_translateZ.o" "Mimic_RigRN.phl[23]";
+connectAttr "Mimic_Transform_Ctrl_translateY.o" "Mimic_RigRN.phl[24]";
+connectAttr "Mimic_RigRN.phl[25]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].trp"
+		;
+connectAttr "Mimic_RigRN.phl[26]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].trt"
+		;
+connectAttr "Mimic_RigRN.phl[27]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tr"
+		;
+connectAttr "Mimic_Transform_Ctrl_rotateY.o" "Mimic_RigRN.phl[28]";
+connectAttr "Mimic_Transform_Ctrl_rotateX.o" "Mimic_RigRN.phl[29]";
+connectAttr "Mimic_Transform_Ctrl_rotateZ.o" "Mimic_RigRN.phl[30]";
+connectAttr "Mimic_RigRN.phl[31]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tro"
+		;
+connectAttr "Mimic_RigRN.phl[32]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].ts"
+		;
+connectAttr "Mimic_Transform_Ctrl_scaleX.o" "Mimic_RigRN.phl[33]";
+connectAttr "Mimic_Transform_Ctrl_scaleY.o" "Mimic_RigRN.phl[34]";
+connectAttr "Mimic_Transform_Ctrl_scaleZ.o" "Mimic_RigRN.phl[35]";
+connectAttr "Mimic_RigRN.phl[36]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tpm"
+		;
+connectAttr "Mimic_Transform_Ctrl_visibility.o" "Mimic_RigRN.phl[37]";
+connectAttr "Mimic_COG_Ctrl_translateX.o" "Mimic_RigRN.phl[38]";
+connectAttr "Mimic_COG_Ctrl_translateY.o" "Mimic_RigRN.phl[39]";
+connectAttr "Mimic_COG_Ctrl_translateZ.o" "Mimic_RigRN.phl[40]";
+connectAttr "Mimic_COG_Ctrl_rotateX.o" "Mimic_RigRN.phl[41]";
+connectAttr "Mimic_COG_Ctrl_rotateY.o" "Mimic_RigRN.phl[42]";
+connectAttr "Mimic_COG_Ctrl_rotateZ.o" "Mimic_RigRN.phl[43]";
+connectAttr "Mimic_COG_Ctrl_scaleX.o" "Mimic_RigRN.phl[44]";
+connectAttr "Mimic_COG_Ctrl_scaleY.o" "Mimic_RigRN.phl[45]";
+connectAttr "Mimic_COG_Ctrl_scaleZ.o" "Mimic_RigRN.phl[46]";
+connectAttr "Mimic_COG_Ctrl_visibility.o" "Mimic_RigRN.phl[47]";
+connectAttr "L_Front_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[48]";
+connectAttr "L_Front_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[49]";
+connectAttr "L_Front_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[50]";
+connectAttr "L_Front_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[51]";
+connectAttr "L_Front_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[52]";
+connectAttr "L_Front_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[53]";
+connectAttr "L_Front_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[54]";
+connectAttr "L_Front_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[55]";
+connectAttr "L_Front_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[56]";
+connectAttr "L_Front_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[57]";
+connectAttr "L_Front_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[58]";
+connectAttr "L_Back_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[59]";
+connectAttr "L_Back_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[60]";
+connectAttr "L_Back_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[61]";
+connectAttr "L_Back_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[62]";
+connectAttr "L_Back_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[63]";
+connectAttr "L_Back_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[64]";
+connectAttr "L_Back_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[65]";
+connectAttr "L_Back_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[66]";
+connectAttr "L_Back_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[67]";
+connectAttr "L_Back_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[68]";
+connectAttr "L_Back_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[69]";
+connectAttr "R_Front_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[70]";
+connectAttr "R_Front_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[71]";
+connectAttr "R_Front_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[72]";
+connectAttr "R_Front_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[73]";
+connectAttr "R_Front_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[74]";
+connectAttr "R_Front_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[75]";
+connectAttr "R_Front_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[76]";
+connectAttr "R_Front_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[77]";
+connectAttr "R_Front_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[78]";
+connectAttr "R_Front_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[79]";
+connectAttr "R_Front_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[80]";
+connectAttr "R_Back_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[81]";
+connectAttr "R_Back_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[82]";
+connectAttr "R_Back_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[83]";
+connectAttr "R_Back_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[84]";
+connectAttr "R_Back_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[85]";
+connectAttr "R_Back_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[86]";
+connectAttr "R_Back_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[87]";
+connectAttr "R_Back_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[88]";
+connectAttr "R_Back_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[89]";
+connectAttr "R_Back_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[90]";
+connectAttr "R_Back_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[91]";
+connectAttr "Back_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[92]";
+connectAttr "Back_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[93]";
+connectAttr "Back_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[94]";
+connectAttr "Back_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[95]";
+connectAttr "Back_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[96]";
+connectAttr "Back_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[97]";
+connectAttr "Back_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[98]";
+connectAttr "Back_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[99]";
+connectAttr "Back_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[100]";
+connectAttr "Back_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[101]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[102]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[103]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[104]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[105]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[106]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[107]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[108]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[109]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[110]";
+connectAttr "L_Back_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[111]";
+connectAttr "L_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[112]";
+connectAttr "L_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[113]";
+connectAttr "L_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[114]";
+connectAttr "L_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[115]";
+connectAttr "L_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[116]";
+connectAttr "L_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[117]";
+connectAttr "L_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[118]";
+connectAttr "L_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[119]";
+connectAttr "L_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[120]";
+connectAttr "L_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[121]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[122]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[123]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[124]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[125]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[126]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[127]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[128]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[129]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[130]";
+connectAttr "L_Front_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[131]";
+connectAttr "Front_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[132]";
+connectAttr "Front_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[133]";
+connectAttr "Front_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[134]";
+connectAttr "Front_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[135]";
+connectAttr "Front_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[136]";
+connectAttr "Front_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[137]";
+connectAttr "Front_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[138]";
+connectAttr "Front_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[139]";
+connectAttr "Front_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[140]";
+connectAttr "Front_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[141]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[142]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[143]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[144]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[145]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[146]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[147]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[148]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[149]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[150]";
+connectAttr "R_Front_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[151]";
+connectAttr "R_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[152]";
+connectAttr "R_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[153]";
+connectAttr "R_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[154]";
+connectAttr "R_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[155]";
+connectAttr "R_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[156]";
+connectAttr "R_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[157]";
+connectAttr "R_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[158]";
+connectAttr "R_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[159]";
+connectAttr "R_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[160]";
+connectAttr "R_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[161]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[162]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[163]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[164]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[165]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[166]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[167]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[168]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[169]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[170]";
+connectAttr "R_Back_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[171]";
+connectAttr "Mimic_Top_Ctrl_Close_Lid.o" "Mimic_RigRN.phl[172]";
+connectAttr "Mimic_Top_Ctrl_translateX.o" "Mimic_RigRN.phl[173]";
+connectAttr "Mimic_Top_Ctrl_translateY.o" "Mimic_RigRN.phl[174]";
+connectAttr "Mimic_Top_Ctrl_translateZ.o" "Mimic_RigRN.phl[175]";
+connectAttr "Mimic_Top_Ctrl_rotateX.o" "Mimic_RigRN.phl[176]";
+connectAttr "Mimic_Top_Ctrl_rotateY.o" "Mimic_RigRN.phl[177]";
+connectAttr "Mimic_Top_Ctrl_rotateZ.o" "Mimic_RigRN.phl[178]";
+connectAttr "Mimic_Top_Ctrl_scaleX.o" "Mimic_RigRN.phl[179]";
+connectAttr "Mimic_Top_Ctrl_scaleY.o" "Mimic_RigRN.phl[180]";
+connectAttr "Mimic_Top_Ctrl_scaleZ.o" "Mimic_RigRN.phl[181]";
+connectAttr "Mimic_Top_Ctrl_visibility.o" "Mimic_RigRN.phl[182]";
+connectAttr "Mimic_Bottom_Ctrl_translateX.o" "Mimic_RigRN.phl[183]";
+connectAttr "Mimic_Bottom_Ctrl_translateY.o" "Mimic_RigRN.phl[184]";
+connectAttr "Mimic_Bottom_Ctrl_translateZ.o" "Mimic_RigRN.phl[185]";
+connectAttr "Mimic_Bottom_Ctrl_rotateX.o" "Mimic_RigRN.phl[186]";
+connectAttr "Mimic_Bottom_Ctrl_rotateY.o" "Mimic_RigRN.phl[187]";
+connectAttr "Mimic_Bottom_Ctrl_rotateZ.o" "Mimic_RigRN.phl[188]";
+connectAttr "Mimic_Bottom_Ctrl_scaleX.o" "Mimic_RigRN.phl[189]";
+connectAttr "Mimic_Bottom_Ctrl_scaleY.o" "Mimic_RigRN.phl[190]";
+connectAttr "Mimic_Bottom_Ctrl_scaleZ.o" "Mimic_RigRN.phl[191]";
+connectAttr "Mimic_Bottom_Ctrl_visibility.o" "Mimic_RigRN.phl[192]";
+connectAttr "Tongue_Stuff_Ctrl_Wv_Envelope.o" "Mimic_RigRN.phl[193]";
+connectAttr "Tongue_Stuff_Ctrl_Wv_Amplitude.o" "Mimic_RigRN.phl[194]";
+connectAttr "Tongue_Stuff_Ctrl_Wv_Wavelength.o" "Mimic_RigRN.phl[195]";
+connectAttr "Tongue_Stuff_Ctrl_Wv_Offset.o" "Mimic_RigRN.phl[196]";
+connectAttr "Tongue_Stuff_Ctrl_Wv_Dropoff.o" "Mimic_RigRN.phl[197]";
+connectAttr "Tongue_Stuff_Ctrl_Wv_Low_Bound.o" "Mimic_RigRN.phl[198]";
+connectAttr "Tongue_Stuff_Ctrl_Wv_High_Bound.o" "Mimic_RigRN.phl[199]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_Envelope.o" "Mimic_RigRN.phl[200]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_Factor.o" "Mimic_RigRN.phl[201]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_Expand.o" "Mimic_RigRN.phl[202]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_Max_Expand_Pos.o" "Mimic_RigRN.phl[203]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_Start_Smoothness.o" "Mimic_RigRN.phl[204]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_End_Smoothness.o" "Mimic_RigRN.phl[205]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_Low_Bound.o" "Mimic_RigRN.phl[206]";
+connectAttr "Tongue_Stuff_Ctrl_Sq_High_Bound.o" "Mimic_RigRN.phl[207]";
+connectAttr "Tongue_Stuff_Ctrl_Tw_Envelope.o" "Mimic_RigRN.phl[208]";
+connectAttr "Tongue_Stuff_Ctrl_Tw_Start_Angle.o" "Mimic_RigRN.phl[209]";
+connectAttr "Tongue_Stuff_Ctrl_Tw_End_Angle.o" "Mimic_RigRN.phl[210]";
+connectAttr "Tongue_Stuff_Ctrl_Tw_Low_Bound.o" "Mimic_RigRN.phl[211]";
+connectAttr "Tongue_Stuff_Ctrl_Tw_High_Bound.o" "Mimic_RigRN.phl[212]";
+connectAttr "Ribbon_01_Ctrl_translateX.o" "Mimic_RigRN.phl[213]";
+connectAttr "Ribbon_01_Ctrl_translateY.o" "Mimic_RigRN.phl[214]";
+connectAttr "Ribbon_01_Ctrl_translateZ.o" "Mimic_RigRN.phl[215]";
+connectAttr "Ribbon_01_Ctrl_rotateX.o" "Mimic_RigRN.phl[216]";
+connectAttr "Ribbon_01_Ctrl_rotateY.o" "Mimic_RigRN.phl[217]";
+connectAttr "Ribbon_01_Ctrl_rotateZ.o" "Mimic_RigRN.phl[218]";
+connectAttr "Ribbon_01_Ctrl_scaleX.o" "Mimic_RigRN.phl[219]";
+connectAttr "Ribbon_01_Ctrl_scaleY.o" "Mimic_RigRN.phl[220]";
+connectAttr "Ribbon_01_Ctrl_scaleZ.o" "Mimic_RigRN.phl[221]";
+connectAttr "Ribbon_01_Ctrl_visibility.o" "Mimic_RigRN.phl[222]";
+connectAttr "Ribbon_02_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[223]";
+connectAttr "Ribbon_02_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[224]";
+connectAttr "Ribbon_02_Ctrl_translateX.o" "Mimic_RigRN.phl[225]";
+connectAttr "Ribbon_02_Ctrl_translateY.o" "Mimic_RigRN.phl[226]";
+connectAttr "Ribbon_02_Ctrl_translateZ.o" "Mimic_RigRN.phl[227]";
+connectAttr "Ribbon_02_Ctrl_rotateX.o" "Mimic_RigRN.phl[228]";
+connectAttr "Ribbon_02_Ctrl_rotateY.o" "Mimic_RigRN.phl[229]";
+connectAttr "Ribbon_02_Ctrl_rotateZ.o" "Mimic_RigRN.phl[230]";
+connectAttr "Ribbon_02_Ctrl_scaleX.o" "Mimic_RigRN.phl[231]";
+connectAttr "Ribbon_02_Ctrl_scaleY.o" "Mimic_RigRN.phl[232]";
+connectAttr "Ribbon_02_Ctrl_scaleZ.o" "Mimic_RigRN.phl[233]";
+connectAttr "Ribbon_02_Ctrl_visibility.o" "Mimic_RigRN.phl[234]";
+connectAttr "Ribbon_03_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[235]";
+connectAttr "Ribbon_03_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[236]";
+connectAttr "Ribbon_03_Ctrl_translateX.o" "Mimic_RigRN.phl[237]";
+connectAttr "Ribbon_03_Ctrl_translateY.o" "Mimic_RigRN.phl[238]";
+connectAttr "Ribbon_03_Ctrl_translateZ.o" "Mimic_RigRN.phl[239]";
+connectAttr "Ribbon_03_Ctrl_rotateX.o" "Mimic_RigRN.phl[240]";
+connectAttr "Ribbon_03_Ctrl_rotateY.o" "Mimic_RigRN.phl[241]";
+connectAttr "Ribbon_03_Ctrl_rotateZ.o" "Mimic_RigRN.phl[242]";
+connectAttr "Ribbon_03_Ctrl_scaleX.o" "Mimic_RigRN.phl[243]";
+connectAttr "Ribbon_03_Ctrl_scaleY.o" "Mimic_RigRN.phl[244]";
+connectAttr "Ribbon_03_Ctrl_scaleZ.o" "Mimic_RigRN.phl[245]";
+connectAttr "Ribbon_03_Ctrl_visibility.o" "Mimic_RigRN.phl[246]";
+connectAttr "Ribbon_04_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[247]";
+connectAttr "Ribbon_04_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[248]";
+connectAttr "Ribbon_04_Ctrl_translateX.o" "Mimic_RigRN.phl[249]";
+connectAttr "Ribbon_04_Ctrl_translateY.o" "Mimic_RigRN.phl[250]";
+connectAttr "Ribbon_04_Ctrl_translateZ.o" "Mimic_RigRN.phl[251]";
+connectAttr "Ribbon_04_Ctrl_rotateX.o" "Mimic_RigRN.phl[252]";
+connectAttr "Ribbon_04_Ctrl_rotateY.o" "Mimic_RigRN.phl[253]";
+connectAttr "Ribbon_04_Ctrl_rotateZ.o" "Mimic_RigRN.phl[254]";
+connectAttr "Ribbon_04_Ctrl_scaleX.o" "Mimic_RigRN.phl[255]";
+connectAttr "Ribbon_04_Ctrl_scaleY.o" "Mimic_RigRN.phl[256]";
+connectAttr "Ribbon_04_Ctrl_scaleZ.o" "Mimic_RigRN.phl[257]";
+connectAttr "Ribbon_04_Ctrl_visibility.o" "Mimic_RigRN.phl[258]";
+connectAttr "Ribbon_05_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[259]";
+connectAttr "Ribbon_05_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[260]";
+connectAttr "Ribbon_05_Ctrl_translateX.o" "Mimic_RigRN.phl[261]";
+connectAttr "Ribbon_05_Ctrl_translateY.o" "Mimic_RigRN.phl[262]";
+connectAttr "Ribbon_05_Ctrl_translateZ.o" "Mimic_RigRN.phl[263]";
+connectAttr "Ribbon_05_Ctrl_rotateX.o" "Mimic_RigRN.phl[264]";
+connectAttr "Ribbon_05_Ctrl_rotateY.o" "Mimic_RigRN.phl[265]";
+connectAttr "Ribbon_05_Ctrl_rotateZ.o" "Mimic_RigRN.phl[266]";
+connectAttr "Ribbon_05_Ctrl_scaleX.o" "Mimic_RigRN.phl[267]";
+connectAttr "Ribbon_05_Ctrl_scaleY.o" "Mimic_RigRN.phl[268]";
+connectAttr "Ribbon_05_Ctrl_scaleZ.o" "Mimic_RigRN.phl[269]";
+connectAttr "Ribbon_05_Ctrl_visibility.o" "Mimic_RigRN.phl[270]";
+connectAttr "Ribbon_06_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[271]";
+connectAttr "Ribbon_06_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[272]";
+connectAttr "Ribbon_06_Ctrl_translateX.o" "Mimic_RigRN.phl[273]";
+connectAttr "Ribbon_06_Ctrl_translateY.o" "Mimic_RigRN.phl[274]";
+connectAttr "Ribbon_06_Ctrl_translateZ.o" "Mimic_RigRN.phl[275]";
+connectAttr "Ribbon_06_Ctrl_rotateX.o" "Mimic_RigRN.phl[276]";
+connectAttr "Ribbon_06_Ctrl_rotateY.o" "Mimic_RigRN.phl[277]";
+connectAttr "Ribbon_06_Ctrl_rotateZ.o" "Mimic_RigRN.phl[278]";
+connectAttr "Ribbon_06_Ctrl_scaleX.o" "Mimic_RigRN.phl[279]";
+connectAttr "Ribbon_06_Ctrl_scaleY.o" "Mimic_RigRN.phl[280]";
+connectAttr "Ribbon_06_Ctrl_scaleZ.o" "Mimic_RigRN.phl[281]";
+connectAttr "Ribbon_06_Ctrl_visibility.o" "Mimic_RigRN.phl[282]";
+connectAttr "Ribbon_07_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[283]";
+connectAttr "Ribbon_07_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[284]";
+connectAttr "Ribbon_07_Ctrl_translateX.o" "Mimic_RigRN.phl[285]";
+connectAttr "Ribbon_07_Ctrl_translateY.o" "Mimic_RigRN.phl[286]";
+connectAttr "Ribbon_07_Ctrl_translateZ.o" "Mimic_RigRN.phl[287]";
+connectAttr "Ribbon_07_Ctrl_rotateX.o" "Mimic_RigRN.phl[288]";
+connectAttr "Ribbon_07_Ctrl_rotateY.o" "Mimic_RigRN.phl[289]";
+connectAttr "Ribbon_07_Ctrl_rotateZ.o" "Mimic_RigRN.phl[290]";
+connectAttr "Ribbon_07_Ctrl_scaleX.o" "Mimic_RigRN.phl[291]";
+connectAttr "Ribbon_07_Ctrl_scaleY.o" "Mimic_RigRN.phl[292]";
+connectAttr "Ribbon_07_Ctrl_scaleZ.o" "Mimic_RigRN.phl[293]";
+connectAttr "Ribbon_07_Ctrl_visibility.o" "Mimic_RigRN.phl[294]";
+connectAttr "Ribbon_08_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[295]";
+connectAttr "Ribbon_08_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[296]";
+connectAttr "Ribbon_08_Ctrl_translateX.o" "Mimic_RigRN.phl[297]";
+connectAttr "Ribbon_08_Ctrl_translateY.o" "Mimic_RigRN.phl[298]";
+connectAttr "Ribbon_08_Ctrl_translateZ.o" "Mimic_RigRN.phl[299]";
+connectAttr "Ribbon_08_Ctrl_rotateX.o" "Mimic_RigRN.phl[300]";
+connectAttr "Ribbon_08_Ctrl_rotateY.o" "Mimic_RigRN.phl[301]";
+connectAttr "Ribbon_08_Ctrl_rotateZ.o" "Mimic_RigRN.phl[302]";
+connectAttr "Ribbon_08_Ctrl_scaleX.o" "Mimic_RigRN.phl[303]";
+connectAttr "Ribbon_08_Ctrl_scaleY.o" "Mimic_RigRN.phl[304]";
+connectAttr "Ribbon_08_Ctrl_scaleZ.o" "Mimic_RigRN.phl[305]";
+connectAttr "Ribbon_08_Ctrl_visibility.o" "Mimic_RigRN.phl[306]";
+connectAttr "Ribbon_End_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[307]";
+connectAttr "Ribbon_End_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[308]";
+connectAttr "Ribbon_End_Ctrl_translateX.o" "Mimic_RigRN.phl[309]";
+connectAttr "Ribbon_End_Ctrl_translateY.o" "Mimic_RigRN.phl[310]";
+connectAttr "Ribbon_End_Ctrl_translateZ.o" "Mimic_RigRN.phl[311]";
+connectAttr "Ribbon_End_Ctrl_rotateX.o" "Mimic_RigRN.phl[312]";
+connectAttr "Ribbon_End_Ctrl_rotateY.o" "Mimic_RigRN.phl[313]";
+connectAttr "Ribbon_End_Ctrl_rotateZ.o" "Mimic_RigRN.phl[314]";
+connectAttr "Ribbon_End_Ctrl_scaleX.o" "Mimic_RigRN.phl[315]";
+connectAttr "Ribbon_End_Ctrl_scaleY.o" "Mimic_RigRN.phl[316]";
+connectAttr "Ribbon_End_Ctrl_scaleZ.o" "Mimic_RigRN.phl[317]";
+connectAttr "Ribbon_End_Ctrl_visibility.o" "Mimic_RigRN.phl[318]";
+connectAttr "Mimic_Body_Squash_Ctrl_Squash_Resizer_Visibility.o" "Mimic_RigRN.phl[319]"
+		;
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_Envelope.o" "Mimic_RigRN.phl[320]";
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_Factor.o" "Mimic_RigRN.phl[321]";
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_Expand.o" "Mimic_RigRN.phl[322]";
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_Max_Expand_Pos.o" "Mimic_RigRN.phl[323]";
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_Start_Smoothness.o" "Mimic_RigRN.phl[324]"
+		;
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_End_Smoothness.o" "Mimic_RigRN.phl[325]";
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_Low_Bound.o" "Mimic_RigRN.phl[326]";
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_High_Bound.o" "Mimic_RigRN.phl[327]";
+connectAttr "Mimic_Body_Squash_Ctrl_Sq_Lattice_Outside_Falloff_Dist.o" "Mimic_RigRN.phl[328]"
+		;
+connectAttr "Transform_Ctrl_Master_Scale1.o" "SkeletonRN.phl[1]";
+connectAttr "Transform_Ctrl_Body_Poly1.o" "SkeletonRN.phl[2]";
+connectAttr "Transform_Ctrl_translateX1.o" "SkeletonRN.phl[3]";
+connectAttr "Transform_Ctrl_translateZ1.o" "SkeletonRN.phl[4]";
+connectAttr "Transform_Ctrl_translateY1.o" "SkeletonRN.phl[5]";
+connectAttr "Transform_Ctrl_rotateX1.o" "SkeletonRN.phl[6]";
+connectAttr "Transform_Ctrl_rotateY1.o" "SkeletonRN.phl[7]";
+connectAttr "Transform_Ctrl_rotateZ1.o" "SkeletonRN.phl[8]";
+connectAttr "camera1_aim.tx" "camera1_group.tg[0].ttx";
+connectAttr "camera1_aim.ty" "camera1_group.tg[0].tty";
+connectAttr "camera1_aim.tz" "camera1_group.tg[0].ttz";
+connectAttr "camera1_aim.rp" "camera1_group.tg[0].trp";
+connectAttr "camera1_aim.rpt" "camera1_group.tg[0].trt";
+connectAttr "camera1_aim.pm" "camera1_group.tg[0].tpm";
+connectAttr "camera1.pim" "camera1_group.cpim";
+connectAttr "camera1.t" "camera1_group.ct";
+connectAttr "camera1.rp" "camera1_group.crp";
+connectAttr "camera1.rpt" "camera1_group.crt";
+connectAttr "camera1_translateX.o" "camera1.tx";
+connectAttr "camera1_translateY.o" "camera1.ty";
+connectAttr "camera1_translateZ.o" "camera1.tz";
+connectAttr "camera1_group.crx" "camera1.rx";
+connectAttr "camera1_group.cry" "camera1.ry";
+connectAttr "camera1_group.crz" "camera1.rz";
+connectAttr "camera1_visibility.o" "camera1.v";
+connectAttr "camera1_scaleX.o" "camera1.sx";
+connectAttr "camera1_scaleY.o" "camera1.sy";
+connectAttr "camera1_scaleZ.o" "camera1.sz";
+connectAttr "unitConversion1.o" "cameraShape1.coi";
+connectAttr "camera1_aim_translateX.o" "camera1_aim.tx";
+connectAttr "camera1_aim_translateY.o" "camera1_aim.ty";
+connectAttr "camera1_aim_translateZ.o" "camera1_aim.tz";
+connectAttr "camera1_aim_visibility.o" "camera1_aim.v";
+connectAttr "camera1_aim_rotateX.o" "camera1_aim.rx";
+connectAttr "camera1_aim_rotateY.o" "camera1_aim.ry";
+connectAttr "camera1_aim_rotateZ.o" "camera1_aim.rz";
+connectAttr "camera1_aim_scaleX.o" "camera1_aim.sx";
+connectAttr "camera1_aim_scaleY.o" "camera1_aim.sy";
+connectAttr "camera1_aim_scaleZ.o" "camera1_aim.sz";
+connectAttr "DragonGateCaveSetRN.phl[1491]" "Mid_Space_Ctrl_01_parentConstraint1.crp"
+		;
+connectAttr "DragonGateCaveSetRN.phl[1492]" "Mid_Space_Ctrl_01_parentConstraint1.crt"
+		;
+connectAttr "DragonGateCaveSetRN.phl[1496]" "Mid_Space_Ctrl_01_parentConstraint1.cro"
+		;
+connectAttr "DragonGateCaveSetRN.phl[1497]" "Mid_Space_Ctrl_01_parentConstraint1.cpim"
+		;
+connectAttr "Mid_Space_Ctrl_01_parentConstraint1.w0" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tw"
+		;
+relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
+connectAttr "layerManager.dli[0]" "defaultLayer.id";
+connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
+connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
+		 -na;
+connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
+connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "Transform_Ctrl_Master_Scale.o" "DragonGateCaveSetRN.phl[2]";
 connectAttr "Transform_Ctrl_Body_Poly.o" "DragonGateCaveSetRN.phl[3]";
 connectAttr "Transform_Ctrl_translateX.o" "DragonGateCaveSetRN.phl[4]";
@@ -27786,19 +26799,11 @@ connectAttr "Mid_Space_Ctrl_01_parentConstraint1.cty" "DragonGateCaveSetRN.phl[1
 		;
 connectAttr "Mid_Space_Ctrl_01_parentConstraint1.ctz" "DragonGateCaveSetRN.phl[1490]"
 		;
-connectAttr "DragonGateCaveSetRN.phl[1491]" "Mid_Space_Ctrl_01_parentConstraint1.crp"
-		;
-connectAttr "DragonGateCaveSetRN.phl[1492]" "Mid_Space_Ctrl_01_parentConstraint1.crt"
-		;
 connectAttr "Mid_Space_Ctrl_01_parentConstraint1.crx" "DragonGateCaveSetRN.phl[1493]"
 		;
 connectAttr "Mid_Space_Ctrl_01_parentConstraint1.cry" "DragonGateCaveSetRN.phl[1494]"
 		;
 connectAttr "Mid_Space_Ctrl_01_parentConstraint1.crz" "DragonGateCaveSetRN.phl[1495]"
-		;
-connectAttr "DragonGateCaveSetRN.phl[1496]" "Mid_Space_Ctrl_01_parentConstraint1.cro"
-		;
-connectAttr "DragonGateCaveSetRN.phl[1497]" "Mid_Space_Ctrl_01_parentConstraint1.cpim"
 		;
 connectAttr "Space_Controllers_Ctrl_L_Space_Ctrl_01.o" "DragonGateCaveSetRN.phl[1498]"
 		;
@@ -27921,403 +26926,6 @@ connectAttr "Neck_02_Redundancy_Ctrl_Operating_Space.o" "DragonGateCaveSetRN.phl
 		;
 connectAttr "Neck_02_Redundancy_Ctrl_visibility.o" "DragonGateCaveSetRN.phl[1571]"
 		;
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1572]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1573]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1578]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1579]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1580]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1581]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1582]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1583]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1584]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1585]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1586]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1587]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1588]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1589]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1590]";
-connectAttr "Environment_Layer.di" "DragonGateCaveSetRN.phl[1591]";
-connectAttr "Chest_Transform_Ctrl_rotateY.o" "Mimic_RigRN.phl[1]";
-connectAttr "Chest_Transform_Ctrl_rotateX.o" "Mimic_RigRN.phl[2]";
-connectAttr "Chest_Transform_Ctrl_rotateZ.o" "Mimic_RigRN.phl[3]";
-connectAttr "Chest_Transform_Ctrl_translateX.o" "Mimic_RigRN.phl[4]";
-connectAttr "Chest_Transform_Ctrl_translateZ.o" "Mimic_RigRN.phl[5]";
-connectAttr "Chest_Transform_Ctrl_translateY.o" "Mimic_RigRN.phl[6]";
-connectAttr "Chest_Transform_Ctrl_visibility.o" "Mimic_RigRN.phl[7]";
-connectAttr "Chest_Transform_Ctrl_scaleX.o" "Mimic_RigRN.phl[8]";
-connectAttr "Chest_Transform_Ctrl_scaleY.o" "Mimic_RigRN.phl[9]";
-connectAttr "Chest_Transform_Ctrl_scaleZ.o" "Mimic_RigRN.phl[10]";
-connectAttr "Chest_COG_Ctrl_translateX.o" "Mimic_RigRN.phl[11]";
-connectAttr "Chest_COG_Ctrl_translateY.o" "Mimic_RigRN.phl[12]";
-connectAttr "Chest_COG_Ctrl_translateZ.o" "Mimic_RigRN.phl[13]";
-connectAttr "Chest_COG_Ctrl_rotateX.o" "Mimic_RigRN.phl[14]";
-connectAttr "Chest_COG_Ctrl_rotateY.o" "Mimic_RigRN.phl[15]";
-connectAttr "Chest_COG_Ctrl_rotateZ.o" "Mimic_RigRN.phl[16]";
-connectAttr "Chest_COG_Ctrl_scaleX.o" "Mimic_RigRN.phl[17]";
-connectAttr "Chest_COG_Ctrl_scaleY.o" "Mimic_RigRN.phl[18]";
-connectAttr "Chest_COG_Ctrl_scaleZ.o" "Mimic_RigRN.phl[19]";
-connectAttr "Chest_COG_Ctrl_visibility.o" "Mimic_RigRN.phl[20]";
-connectAttr "Mimic_RigRN.phl[21]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tt"
-		;
-connectAttr "Mimic_Transform_Ctrl_translateX.o" "Mimic_RigRN.phl[22]";
-connectAttr "Mimic_Transform_Ctrl_translateZ.o" "Mimic_RigRN.phl[23]";
-connectAttr "Mimic_Transform_Ctrl_translateY.o" "Mimic_RigRN.phl[24]";
-connectAttr "Mimic_RigRN.phl[25]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].trp"
-		;
-connectAttr "Mimic_RigRN.phl[26]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].trt"
-		;
-connectAttr "Mimic_RigRN.phl[27]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tr"
-		;
-connectAttr "Mimic_Transform_Ctrl_rotateY.o" "Mimic_RigRN.phl[28]";
-connectAttr "Mimic_Transform_Ctrl_rotateX.o" "Mimic_RigRN.phl[29]";
-connectAttr "Mimic_Transform_Ctrl_rotateZ.o" "Mimic_RigRN.phl[30]";
-connectAttr "Mimic_RigRN.phl[31]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tro"
-		;
-connectAttr "Mimic_RigRN.phl[32]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].ts"
-		;
-connectAttr "Mimic_Transform_Ctrl_scaleX.o" "Mimic_RigRN.phl[33]";
-connectAttr "Mimic_Transform_Ctrl_scaleY.o" "Mimic_RigRN.phl[34]";
-connectAttr "Mimic_Transform_Ctrl_scaleZ.o" "Mimic_RigRN.phl[35]";
-connectAttr "Mimic_RigRN.phl[36]" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tpm"
-		;
-connectAttr "Mimic_Transform_Ctrl_visibility.o" "Mimic_RigRN.phl[37]";
-connectAttr "Mimic_COG_Ctrl_translateX.o" "Mimic_RigRN.phl[38]";
-connectAttr "Mimic_COG_Ctrl_translateY.o" "Mimic_RigRN.phl[39]";
-connectAttr "Mimic_COG_Ctrl_translateZ.o" "Mimic_RigRN.phl[40]";
-connectAttr "Mimic_COG_Ctrl_rotateX.o" "Mimic_RigRN.phl[41]";
-connectAttr "Mimic_COG_Ctrl_rotateY.o" "Mimic_RigRN.phl[42]";
-connectAttr "Mimic_COG_Ctrl_rotateZ.o" "Mimic_RigRN.phl[43]";
-connectAttr "Mimic_COG_Ctrl_scaleX.o" "Mimic_RigRN.phl[44]";
-connectAttr "Mimic_COG_Ctrl_scaleY.o" "Mimic_RigRN.phl[45]";
-connectAttr "Mimic_COG_Ctrl_scaleZ.o" "Mimic_RigRN.phl[46]";
-connectAttr "Mimic_COG_Ctrl_visibility.o" "Mimic_RigRN.phl[47]";
-connectAttr "L_Front_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[48]";
-connectAttr "L_Front_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[49]";
-connectAttr "L_Front_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[50]";
-connectAttr "L_Front_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[51]";
-connectAttr "L_Front_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[52]";
-connectAttr "L_Front_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[53]";
-connectAttr "L_Front_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[54]";
-connectAttr "L_Front_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[55]";
-connectAttr "L_Front_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[56]";
-connectAttr "L_Front_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[57]";
-connectAttr "L_Front_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[58]";
-connectAttr "L_Back_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[59]";
-connectAttr "L_Back_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[60]";
-connectAttr "L_Back_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[61]";
-connectAttr "L_Back_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[62]";
-connectAttr "L_Back_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[63]";
-connectAttr "L_Back_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[64]";
-connectAttr "L_Back_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[65]";
-connectAttr "L_Back_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[66]";
-connectAttr "L_Back_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[67]";
-connectAttr "L_Back_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[68]";
-connectAttr "L_Back_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[69]";
-connectAttr "R_Front_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[70]";
-connectAttr "R_Front_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[71]";
-connectAttr "R_Front_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[72]";
-connectAttr "R_Front_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[73]";
-connectAttr "R_Front_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[74]";
-connectAttr "R_Front_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[75]";
-connectAttr "R_Front_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[76]";
-connectAttr "R_Front_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[77]";
-connectAttr "R_Front_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[78]";
-connectAttr "R_Front_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[79]";
-connectAttr "R_Front_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[80]";
-connectAttr "R_Back_Leg_IK_Ctrl_Operating_Space.o" "Mimic_RigRN.phl[81]";
-connectAttr "R_Back_Leg_IK_Ctrl_visibility.o" "Mimic_RigRN.phl[82]";
-connectAttr "R_Back_Leg_IK_Ctrl_translateX.o" "Mimic_RigRN.phl[83]";
-connectAttr "R_Back_Leg_IK_Ctrl_translateY.o" "Mimic_RigRN.phl[84]";
-connectAttr "R_Back_Leg_IK_Ctrl_translateZ.o" "Mimic_RigRN.phl[85]";
-connectAttr "R_Back_Leg_IK_Ctrl_rotateX.o" "Mimic_RigRN.phl[86]";
-connectAttr "R_Back_Leg_IK_Ctrl_rotateY.o" "Mimic_RigRN.phl[87]";
-connectAttr "R_Back_Leg_IK_Ctrl_rotateZ.o" "Mimic_RigRN.phl[88]";
-connectAttr "R_Back_Leg_IK_Ctrl_scaleX.o" "Mimic_RigRN.phl[89]";
-connectAttr "R_Back_Leg_IK_Ctrl_scaleY.o" "Mimic_RigRN.phl[90]";
-connectAttr "R_Back_Leg_IK_Ctrl_scaleZ.o" "Mimic_RigRN.phl[91]";
-connectAttr "Back_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[92]";
-connectAttr "Back_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[93]";
-connectAttr "Back_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[94]";
-connectAttr "Back_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[95]";
-connectAttr "Back_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[96]";
-connectAttr "Back_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[97]";
-connectAttr "Back_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[98]";
-connectAttr "Back_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[99]";
-connectAttr "Back_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[100]";
-connectAttr "Back_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[101]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[102]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[103]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[104]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[105]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[106]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[107]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[108]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[109]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[110]";
-connectAttr "L_Back_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[111]";
-connectAttr "L_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[112]";
-connectAttr "L_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[113]";
-connectAttr "L_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[114]";
-connectAttr "L_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[115]";
-connectAttr "L_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[116]";
-connectAttr "L_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[117]";
-connectAttr "L_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[118]";
-connectAttr "L_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[119]";
-connectAttr "L_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[120]";
-connectAttr "L_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[121]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[122]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[123]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[124]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[125]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[126]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[127]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[128]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[129]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[130]";
-connectAttr "L_Front_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[131]";
-connectAttr "Front_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[132]";
-connectAttr "Front_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[133]";
-connectAttr "Front_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[134]";
-connectAttr "Front_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[135]";
-connectAttr "Front_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[136]";
-connectAttr "Front_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[137]";
-connectAttr "Front_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[138]";
-connectAttr "Front_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[139]";
-connectAttr "Front_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[140]";
-connectAttr "Front_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[141]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[142]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[143]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[144]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[145]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[146]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[147]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[148]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[149]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[150]";
-connectAttr "R_Front_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[151]";
-connectAttr "R_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[152]";
-connectAttr "R_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[153]";
-connectAttr "R_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[154]";
-connectAttr "R_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[155]";
-connectAttr "R_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[156]";
-connectAttr "R_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[157]";
-connectAttr "R_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[158]";
-connectAttr "R_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[159]";
-connectAttr "R_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[160]";
-connectAttr "R_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[161]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_translateX.o" "Mimic_RigRN.phl[162]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_translateY.o" "Mimic_RigRN.phl[163]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_translateZ.o" "Mimic_RigRN.phl[164]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_rotateX.o" "Mimic_RigRN.phl[165]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_rotateY.o" "Mimic_RigRN.phl[166]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_rotateZ.o" "Mimic_RigRN.phl[167]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_scaleX.o" "Mimic_RigRN.phl[168]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_scaleY.o" "Mimic_RigRN.phl[169]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_scaleZ.o" "Mimic_RigRN.phl[170]";
-connectAttr "R_Back_Mimic_Pivot_Ctrl_visibility.o" "Mimic_RigRN.phl[171]";
-connectAttr "Mimic_Top_Ctrl_Close_Lid.o" "Mimic_RigRN.phl[172]";
-connectAttr "Mimic_Top_Ctrl_translateX.o" "Mimic_RigRN.phl[173]";
-connectAttr "Mimic_Top_Ctrl_translateY.o" "Mimic_RigRN.phl[174]";
-connectAttr "Mimic_Top_Ctrl_translateZ.o" "Mimic_RigRN.phl[175]";
-connectAttr "Mimic_Top_Ctrl_rotateX.o" "Mimic_RigRN.phl[176]";
-connectAttr "Mimic_Top_Ctrl_rotateY.o" "Mimic_RigRN.phl[177]";
-connectAttr "Mimic_Top_Ctrl_rotateZ.o" "Mimic_RigRN.phl[178]";
-connectAttr "Mimic_Top_Ctrl_scaleX.o" "Mimic_RigRN.phl[179]";
-connectAttr "Mimic_Top_Ctrl_scaleY.o" "Mimic_RigRN.phl[180]";
-connectAttr "Mimic_Top_Ctrl_scaleZ.o" "Mimic_RigRN.phl[181]";
-connectAttr "Mimic_Top_Ctrl_visibility.o" "Mimic_RigRN.phl[182]";
-connectAttr "Mimic_Bottom_Ctrl_translateX.o" "Mimic_RigRN.phl[183]";
-connectAttr "Mimic_Bottom_Ctrl_translateY.o" "Mimic_RigRN.phl[184]";
-connectAttr "Mimic_Bottom_Ctrl_translateZ.o" "Mimic_RigRN.phl[185]";
-connectAttr "Mimic_Bottom_Ctrl_rotateX.o" "Mimic_RigRN.phl[186]";
-connectAttr "Mimic_Bottom_Ctrl_rotateY.o" "Mimic_RigRN.phl[187]";
-connectAttr "Mimic_Bottom_Ctrl_rotateZ.o" "Mimic_RigRN.phl[188]";
-connectAttr "Mimic_Bottom_Ctrl_scaleX.o" "Mimic_RigRN.phl[189]";
-connectAttr "Mimic_Bottom_Ctrl_scaleY.o" "Mimic_RigRN.phl[190]";
-connectAttr "Mimic_Bottom_Ctrl_scaleZ.o" "Mimic_RigRN.phl[191]";
-connectAttr "Mimic_Bottom_Ctrl_visibility.o" "Mimic_RigRN.phl[192]";
-connectAttr "Tongue_Stuff_Ctrl_Wv_Envelope.o" "Mimic_RigRN.phl[193]";
-connectAttr "Tongue_Stuff_Ctrl_Wv_Amplitude.o" "Mimic_RigRN.phl[194]";
-connectAttr "Tongue_Stuff_Ctrl_Wv_Wavelength.o" "Mimic_RigRN.phl[195]";
-connectAttr "Tongue_Stuff_Ctrl_Wv_Offset.o" "Mimic_RigRN.phl[196]";
-connectAttr "Tongue_Stuff_Ctrl_Wv_Dropoff.o" "Mimic_RigRN.phl[197]";
-connectAttr "Tongue_Stuff_Ctrl_Wv_Low_Bound.o" "Mimic_RigRN.phl[198]";
-connectAttr "Tongue_Stuff_Ctrl_Wv_High_Bound.o" "Mimic_RigRN.phl[199]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_Envelope.o" "Mimic_RigRN.phl[200]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_Factor.o" "Mimic_RigRN.phl[201]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_Expand.o" "Mimic_RigRN.phl[202]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_Max_Expand_Pos.o" "Mimic_RigRN.phl[203]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_Start_Smoothness.o" "Mimic_RigRN.phl[204]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_End_Smoothness.o" "Mimic_RigRN.phl[205]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_Low_Bound.o" "Mimic_RigRN.phl[206]";
-connectAttr "Tongue_Stuff_Ctrl_Sq_High_Bound.o" "Mimic_RigRN.phl[207]";
-connectAttr "Tongue_Stuff_Ctrl_Tw_Envelope.o" "Mimic_RigRN.phl[208]";
-connectAttr "Tongue_Stuff_Ctrl_Tw_Start_Angle.o" "Mimic_RigRN.phl[209]";
-connectAttr "Tongue_Stuff_Ctrl_Tw_End_Angle.o" "Mimic_RigRN.phl[210]";
-connectAttr "Tongue_Stuff_Ctrl_Tw_Low_Bound.o" "Mimic_RigRN.phl[211]";
-connectAttr "Tongue_Stuff_Ctrl_Tw_High_Bound.o" "Mimic_RigRN.phl[212]";
-connectAttr "Ribbon_01_Ctrl_translateX.o" "Mimic_RigRN.phl[213]";
-connectAttr "Ribbon_01_Ctrl_translateY.o" "Mimic_RigRN.phl[214]";
-connectAttr "Ribbon_01_Ctrl_translateZ.o" "Mimic_RigRN.phl[215]";
-connectAttr "Ribbon_01_Ctrl_rotateX.o" "Mimic_RigRN.phl[216]";
-connectAttr "Ribbon_01_Ctrl_rotateY.o" "Mimic_RigRN.phl[217]";
-connectAttr "Ribbon_01_Ctrl_rotateZ.o" "Mimic_RigRN.phl[218]";
-connectAttr "Ribbon_01_Ctrl_scaleX.o" "Mimic_RigRN.phl[219]";
-connectAttr "Ribbon_01_Ctrl_scaleY.o" "Mimic_RigRN.phl[220]";
-connectAttr "Ribbon_01_Ctrl_scaleZ.o" "Mimic_RigRN.phl[221]";
-connectAttr "Ribbon_01_Ctrl_visibility.o" "Mimic_RigRN.phl[222]";
-connectAttr "Ribbon_02_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[223]";
-connectAttr "Ribbon_02_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[224]";
-connectAttr "Ribbon_02_Ctrl_translateX.o" "Mimic_RigRN.phl[225]";
-connectAttr "Ribbon_02_Ctrl_translateY.o" "Mimic_RigRN.phl[226]";
-connectAttr "Ribbon_02_Ctrl_translateZ.o" "Mimic_RigRN.phl[227]";
-connectAttr "Ribbon_02_Ctrl_rotateX.o" "Mimic_RigRN.phl[228]";
-connectAttr "Ribbon_02_Ctrl_rotateY.o" "Mimic_RigRN.phl[229]";
-connectAttr "Ribbon_02_Ctrl_rotateZ.o" "Mimic_RigRN.phl[230]";
-connectAttr "Ribbon_02_Ctrl_scaleX.o" "Mimic_RigRN.phl[231]";
-connectAttr "Ribbon_02_Ctrl_scaleY.o" "Mimic_RigRN.phl[232]";
-connectAttr "Ribbon_02_Ctrl_scaleZ.o" "Mimic_RigRN.phl[233]";
-connectAttr "Ribbon_02_Ctrl_visibility.o" "Mimic_RigRN.phl[234]";
-connectAttr "Ribbon_03_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[235]";
-connectAttr "Ribbon_03_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[236]";
-connectAttr "Ribbon_03_Ctrl_translateX.o" "Mimic_RigRN.phl[237]";
-connectAttr "Ribbon_03_Ctrl_translateY.o" "Mimic_RigRN.phl[238]";
-connectAttr "Ribbon_03_Ctrl_translateZ.o" "Mimic_RigRN.phl[239]";
-connectAttr "Ribbon_03_Ctrl_rotateX.o" "Mimic_RigRN.phl[240]";
-connectAttr "Ribbon_03_Ctrl_rotateY.o" "Mimic_RigRN.phl[241]";
-connectAttr "Ribbon_03_Ctrl_rotateZ.o" "Mimic_RigRN.phl[242]";
-connectAttr "Ribbon_03_Ctrl_scaleX.o" "Mimic_RigRN.phl[243]";
-connectAttr "Ribbon_03_Ctrl_scaleY.o" "Mimic_RigRN.phl[244]";
-connectAttr "Ribbon_03_Ctrl_scaleZ.o" "Mimic_RigRN.phl[245]";
-connectAttr "Ribbon_03_Ctrl_visibility.o" "Mimic_RigRN.phl[246]";
-connectAttr "Ribbon_04_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[247]";
-connectAttr "Ribbon_04_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[248]";
-connectAttr "Ribbon_04_Ctrl_translateX.o" "Mimic_RigRN.phl[249]";
-connectAttr "Ribbon_04_Ctrl_translateY.o" "Mimic_RigRN.phl[250]";
-connectAttr "Ribbon_04_Ctrl_translateZ.o" "Mimic_RigRN.phl[251]";
-connectAttr "Ribbon_04_Ctrl_rotateX.o" "Mimic_RigRN.phl[252]";
-connectAttr "Ribbon_04_Ctrl_rotateY.o" "Mimic_RigRN.phl[253]";
-connectAttr "Ribbon_04_Ctrl_rotateZ.o" "Mimic_RigRN.phl[254]";
-connectAttr "Ribbon_04_Ctrl_scaleX.o" "Mimic_RigRN.phl[255]";
-connectAttr "Ribbon_04_Ctrl_scaleY.o" "Mimic_RigRN.phl[256]";
-connectAttr "Ribbon_04_Ctrl_scaleZ.o" "Mimic_RigRN.phl[257]";
-connectAttr "Ribbon_04_Ctrl_visibility.o" "Mimic_RigRN.phl[258]";
-connectAttr "Ribbon_05_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[259]";
-connectAttr "Ribbon_05_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[260]";
-connectAttr "Ribbon_05_Ctrl_translateX.o" "Mimic_RigRN.phl[261]";
-connectAttr "Ribbon_05_Ctrl_translateY.o" "Mimic_RigRN.phl[262]";
-connectAttr "Ribbon_05_Ctrl_translateZ.o" "Mimic_RigRN.phl[263]";
-connectAttr "Ribbon_05_Ctrl_rotateX.o" "Mimic_RigRN.phl[264]";
-connectAttr "Ribbon_05_Ctrl_rotateY.o" "Mimic_RigRN.phl[265]";
-connectAttr "Ribbon_05_Ctrl_rotateZ.o" "Mimic_RigRN.phl[266]";
-connectAttr "Ribbon_05_Ctrl_scaleX.o" "Mimic_RigRN.phl[267]";
-connectAttr "Ribbon_05_Ctrl_scaleY.o" "Mimic_RigRN.phl[268]";
-connectAttr "Ribbon_05_Ctrl_scaleZ.o" "Mimic_RigRN.phl[269]";
-connectAttr "Ribbon_05_Ctrl_visibility.o" "Mimic_RigRN.phl[270]";
-connectAttr "Ribbon_06_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[271]";
-connectAttr "Ribbon_06_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[272]";
-connectAttr "Ribbon_06_Ctrl_translateX.o" "Mimic_RigRN.phl[273]";
-connectAttr "Ribbon_06_Ctrl_translateY.o" "Mimic_RigRN.phl[274]";
-connectAttr "Ribbon_06_Ctrl_translateZ.o" "Mimic_RigRN.phl[275]";
-connectAttr "Ribbon_06_Ctrl_rotateX.o" "Mimic_RigRN.phl[276]";
-connectAttr "Ribbon_06_Ctrl_rotateY.o" "Mimic_RigRN.phl[277]";
-connectAttr "Ribbon_06_Ctrl_rotateZ.o" "Mimic_RigRN.phl[278]";
-connectAttr "Ribbon_06_Ctrl_scaleX.o" "Mimic_RigRN.phl[279]";
-connectAttr "Ribbon_06_Ctrl_scaleY.o" "Mimic_RigRN.phl[280]";
-connectAttr "Ribbon_06_Ctrl_scaleZ.o" "Mimic_RigRN.phl[281]";
-connectAttr "Ribbon_06_Ctrl_visibility.o" "Mimic_RigRN.phl[282]";
-connectAttr "Ribbon_07_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[283]";
-connectAttr "Ribbon_07_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[284]";
-connectAttr "Ribbon_07_Ctrl_translateX.o" "Mimic_RigRN.phl[285]";
-connectAttr "Ribbon_07_Ctrl_translateY.o" "Mimic_RigRN.phl[286]";
-connectAttr "Ribbon_07_Ctrl_translateZ.o" "Mimic_RigRN.phl[287]";
-connectAttr "Ribbon_07_Ctrl_rotateX.o" "Mimic_RigRN.phl[288]";
-connectAttr "Ribbon_07_Ctrl_rotateY.o" "Mimic_RigRN.phl[289]";
-connectAttr "Ribbon_07_Ctrl_rotateZ.o" "Mimic_RigRN.phl[290]";
-connectAttr "Ribbon_07_Ctrl_scaleX.o" "Mimic_RigRN.phl[291]";
-connectAttr "Ribbon_07_Ctrl_scaleY.o" "Mimic_RigRN.phl[292]";
-connectAttr "Ribbon_07_Ctrl_scaleZ.o" "Mimic_RigRN.phl[293]";
-connectAttr "Ribbon_07_Ctrl_visibility.o" "Mimic_RigRN.phl[294]";
-connectAttr "Ribbon_08_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[295]";
-connectAttr "Ribbon_08_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[296]";
-connectAttr "Ribbon_08_Ctrl_translateX.o" "Mimic_RigRN.phl[297]";
-connectAttr "Ribbon_08_Ctrl_translateY.o" "Mimic_RigRN.phl[298]";
-connectAttr "Ribbon_08_Ctrl_translateZ.o" "Mimic_RigRN.phl[299]";
-connectAttr "Ribbon_08_Ctrl_rotateX.o" "Mimic_RigRN.phl[300]";
-connectAttr "Ribbon_08_Ctrl_rotateY.o" "Mimic_RigRN.phl[301]";
-connectAttr "Ribbon_08_Ctrl_rotateZ.o" "Mimic_RigRN.phl[302]";
-connectAttr "Ribbon_08_Ctrl_scaleX.o" "Mimic_RigRN.phl[303]";
-connectAttr "Ribbon_08_Ctrl_scaleY.o" "Mimic_RigRN.phl[304]";
-connectAttr "Ribbon_08_Ctrl_scaleZ.o" "Mimic_RigRN.phl[305]";
-connectAttr "Ribbon_08_Ctrl_visibility.o" "Mimic_RigRN.phl[306]";
-connectAttr "Ribbon_End_Ctrl_Follow_Translate.o" "Mimic_RigRN.phl[307]";
-connectAttr "Ribbon_End_Ctrl_Follow_Rotate.o" "Mimic_RigRN.phl[308]";
-connectAttr "Ribbon_End_Ctrl_translateX.o" "Mimic_RigRN.phl[309]";
-connectAttr "Ribbon_End_Ctrl_translateY.o" "Mimic_RigRN.phl[310]";
-connectAttr "Ribbon_End_Ctrl_translateZ.o" "Mimic_RigRN.phl[311]";
-connectAttr "Ribbon_End_Ctrl_rotateX.o" "Mimic_RigRN.phl[312]";
-connectAttr "Ribbon_End_Ctrl_rotateY.o" "Mimic_RigRN.phl[313]";
-connectAttr "Ribbon_End_Ctrl_rotateZ.o" "Mimic_RigRN.phl[314]";
-connectAttr "Ribbon_End_Ctrl_scaleX.o" "Mimic_RigRN.phl[315]";
-connectAttr "Ribbon_End_Ctrl_scaleY.o" "Mimic_RigRN.phl[316]";
-connectAttr "Ribbon_End_Ctrl_scaleZ.o" "Mimic_RigRN.phl[317]";
-connectAttr "Ribbon_End_Ctrl_visibility.o" "Mimic_RigRN.phl[318]";
-connectAttr "Mimic_Body_Squash_Ctrl_Squash_Resizer_Visibility.o" "Mimic_RigRN.phl[319]"
-		;
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_Envelope.o" "Mimic_RigRN.phl[320]";
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_Factor.o" "Mimic_RigRN.phl[321]";
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_Expand.o" "Mimic_RigRN.phl[322]";
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_Max_Expand_Pos.o" "Mimic_RigRN.phl[323]";
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_Start_Smoothness.o" "Mimic_RigRN.phl[324]"
-		;
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_End_Smoothness.o" "Mimic_RigRN.phl[325]";
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_Low_Bound.o" "Mimic_RigRN.phl[326]";
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_High_Bound.o" "Mimic_RigRN.phl[327]";
-connectAttr "Mimic_Body_Squash_Ctrl_Sq_Lattice_Outside_Falloff_Dist.o" "Mimic_RigRN.phl[328]"
-		;
-connectAttr "camera1_aim.tx" "camera1_group.tg[0].ttx";
-connectAttr "camera1_aim.ty" "camera1_group.tg[0].tty";
-connectAttr "camera1_aim.tz" "camera1_group.tg[0].ttz";
-connectAttr "camera1_aim.rp" "camera1_group.tg[0].trp";
-connectAttr "camera1_aim.rpt" "camera1_group.tg[0].trt";
-connectAttr "camera1_aim.pm" "camera1_group.tg[0].tpm";
-connectAttr "camera1.pim" "camera1_group.cpim";
-connectAttr "camera1.t" "camera1_group.ct";
-connectAttr "camera1.rp" "camera1_group.crp";
-connectAttr "camera1.rpt" "camera1_group.crt";
-connectAttr "camera1_translateX.o" "camera1.tx";
-connectAttr "camera1_translateY.o" "camera1.ty";
-connectAttr "camera1_translateZ.o" "camera1.tz";
-connectAttr "camera1_group.crx" "camera1.rx";
-connectAttr "camera1_group.cry" "camera1.ry";
-connectAttr "camera1_group.crz" "camera1.rz";
-connectAttr "camera1_visibility.o" "camera1.v";
-connectAttr "camera1_scaleX.o" "camera1.sx";
-connectAttr "camera1_scaleY.o" "camera1.sy";
-connectAttr "camera1_scaleZ.o" "camera1.sz";
-connectAttr "unitConversion1.o" "cameraShape1.coi";
-connectAttr "camera1_aim_translateX.o" "camera1_aim.tx";
-connectAttr "camera1_aim_translateY.o" "camera1_aim.ty";
-connectAttr "camera1_aim_translateZ.o" "camera1_aim.tz";
-connectAttr "camera1_aim_visibility.o" "camera1_aim.v";
-connectAttr "camera1_aim_rotateX.o" "camera1_aim.rx";
-connectAttr "camera1_aim_rotateY.o" "camera1_aim.ry";
-connectAttr "camera1_aim_rotateZ.o" "camera1_aim.rz";
-connectAttr "camera1_aim_scaleX.o" "camera1_aim.sx";
-connectAttr "camera1_aim_scaleY.o" "camera1_aim.sy";
-connectAttr "camera1_aim_scaleZ.o" "camera1_aim.sz";
-connectAttr "Mid_Space_Ctrl_01_parentConstraint1.w0" "Mid_Space_Ctrl_01_parentConstraint1.tg[0].tw"
-		;
-relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
-relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
-relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
-relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
-connectAttr "layerManager.dli[0]" "defaultLayer.id";
-connectAttr "renderLayerManager.rlmi[0]" "defaultRenderLayer.rlid";
-connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
-		 -na;
-connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
-connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "DragonGateCaveSetRNfosterParent1.msg" "DragonGateCaveSetRN.fp";
 connectAttr "layerManager.dli[2]" "Environment_Layer.id";
 connectAttr "camera1_group.db" "unitConversion1.i";
