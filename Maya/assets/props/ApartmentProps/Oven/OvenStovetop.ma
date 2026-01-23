@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: OvenStovetop.ma
-//Last modified: Thu, Jan 22, 2026 11:07:27 AM
+//Last modified: Thu, Jan 22, 2026 11:10:42 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "F5058E09-44C7-DA36-D229-00AB81E153D4";
+fileInfo "UUID" "B4DF93CC-4459-F065-E5EF-3A991AC5D088";
 createNode transform -s -n "persp";
 	rename -uid "780BB7E7-442B-7A95-7C46-8A8D2B899F12";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -8.641944576120256 8.0389521966665693 8.1141993050144876 ;
-	setAttr ".r" -type "double3" -21.338352729168793 -40.600000000006055 0 ;
+	setAttr ".t" -type "double3" -1.4344441825810883 6.4948500851366866 5.5639466620582478 ;
+	setAttr ".r" -type "double3" -24.938352729169903 -0.20000000000656831 3.106029354110455e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "6BDB4C6F-49ED-694B-98FF-BF80604034CE";
 	setAttr -k off ".v" no;
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 12.619637926373683;
+	setAttr ".coi" 7.0474904129466269;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
