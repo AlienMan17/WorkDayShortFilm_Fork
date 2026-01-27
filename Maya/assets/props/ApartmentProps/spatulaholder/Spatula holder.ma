@@ -1,6 +1,6 @@
 //Maya ASCII 2026 scene
 //Name: Spatula holder.ma
-//Last modified: Sun, Jan 25, 2026 12:14:00 PM
+//Last modified: Sun, Jan 25, 2026 12:29:50 PM
 //Codeset: UTF-8
 requires maya "2026";
 requires "mtoa" "5.5.3";
@@ -10,11 +10,11 @@ fileInfo "product" "Maya 2026";
 fileInfo "version" "2026";
 fileInfo "cutIdentifier" "202507081222-4d6919b75c";
 fileInfo "osv" "Mac OS X 15.7.3";
-fileInfo "UUID" "F211F9E5-8341-F071-3B80-0E8EA8518D5E";
+fileInfo "UUID" "71C8828C-2844-2FB1-04C8-9EAFCA71BDA1";
 createNode transform -s -n "persp";
 	rename -uid "FE219E53-784C-84C5-FD67-95BD4BD15B62";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.7859137371356881 2.3661408384835614 -3.3637152505823846 ;
+	setAttr ".t" -type "double3" 3.5038506312999189 1.1074321353213887 -7.531742575903305 ;
 	setAttr ".r" -type "double3" 375.59999999638916 -202.39999999996854 0 ;
 	setAttr ".rpt" -type "double3" 2.7797367149999694e-17 -4.2288155997485703e-17 -2.3581218138252341e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 4.4034067007661211;
+	setAttr ".coi" 9.0840163358851012;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
